@@ -1,0 +1,26 @@
+.header {
+  position: relative;
+  margin-bottom: 3rem;
+
+  > .container {
+    border-bottom: 1px solid silver;
+  }
+}
+
+.header__logo {
+  width: 80px;
+}
+
+.header__title {
+  font-size: 26px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  padding: 0.5em 0em;
+
+  &,
+  &:visited {
+    color: $grey-dark;
+  }
+}

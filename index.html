@@ -2,18 +2,21 @@
 layout: default
 ---
 
-<div class="home">
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for post in site.posts %}
+    <tr>
+      <td data-label="Title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td>
+      <td data-label="Author">{{ post.author }}</td>
+      <td data-label="Date">{{ post.date | date: "%b %-d, %Y" }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

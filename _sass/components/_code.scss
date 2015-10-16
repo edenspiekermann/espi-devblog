@@ -1,0 +1,17 @@
+pre,
+code {
+  font-size: 0.9em;
+  background-color: #eef;
+}
+
+:not(pre) > code {
+  border: 1px solid rgba(black, 0.1);
+  padding: 1px 5px;
+  white-space: nowrap;
+}
+
+pre {
+  border: 1px solid rgba(black, 0.1);
+  padding: 0.5em 1em;
+  overflow-x: scroll;
+}

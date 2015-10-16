@@ -5,9 +5,13 @@
 
 @import
   'abstracts/variables',
-  'abstracts/mixins',
   'vendor/syntax-highlighting',
   'vendor/normalize',
+  'base/fonts',
   'base/base',
-  'base/layout'
+  'base/layout',
+  'layout/header',
+  'layout/footer',
+  'components/icon',
+  'pages/article'
 ;

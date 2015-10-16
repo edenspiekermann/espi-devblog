@@ -7,7 +7,7 @@ a {
   }
 
   &:hover {
-    color: $text-color;
+    color: inherit;
     text-decoration: underline;
   }
 }

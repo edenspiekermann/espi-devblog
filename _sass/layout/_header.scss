@@ -12,15 +12,7 @@
 }
 
 .header__title {
-  font-size: 26px;
-  line-height: 56px;
-  letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
-  padding: 0.5em 0em;
-
-  &,
-  &:visited {
-    color: $grey-dark;
-  }
+  padding: 0.5em 0;
 }

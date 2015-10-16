@@ -5,13 +5,23 @@
 
 @import
   'abstracts/variables',
+
   'vendor/syntax-highlighting',
   'vendor/normalize',
+
   'base/fonts',
   'base/base',
   'base/layout',
+
   'layout/header',
   'layout/footer',
+
   'components/icon',
+  'components/blockquote',
+  'components/code',
+  'components/image',
+  'components/link',
+  'components/table',
+
   'pages/article'
 ;

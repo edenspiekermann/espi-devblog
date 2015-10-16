@@ -1,10 +1,10 @@
 .header {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: ($spacing-unit * 2);
+}
 
-  > .container {
-    border-bottom: 1px solid silver;
-  }
+.header > .container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header__logo {
@@ -14,5 +14,5 @@
 .header__title {
   margin-bottom: 0;
   float: left;
-  padding: 0.5em 0;
+  padding: ($spacing-unit / 2) 0;
 }

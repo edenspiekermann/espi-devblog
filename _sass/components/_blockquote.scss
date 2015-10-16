@@ -4,8 +4,8 @@ blockquote {
   padding-left: ($spacing-unit / 2);
   font-style: italic;
   margin-left: 0;
+}
 
-  > :last-child {
-    margin-bottom: 0;
-  }
+blockquote > :last-child {
+  margin-bottom: 0;
 }

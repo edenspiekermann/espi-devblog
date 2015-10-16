@@ -31,7 +31,7 @@ Beware not to get extreme about it and promote all elements from the DOM (or too
 
 It would basically be driving a very powerful sport car on a very crowded freeway during rush hour: pointless.
 
-## Further readings
+## Further reading
 
 * [Hardware Accelerated CSS: The Nice vs The Naughty](http://calendar.perfplanet.com/2014/hardware-accelerated-css-the-nice-vs-the-naughty/)
 * [Increase Site Performance With Hardware Accelerated CSS](http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css)

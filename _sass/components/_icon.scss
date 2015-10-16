@@ -3,8 +3,8 @@
   width: 16px;
   height: 16px;
   vertical-align: middle;
+}
 
-  path {
-    fill: $grey;
-  }
+.icon > svg path {
+  fill: $grey;
 }

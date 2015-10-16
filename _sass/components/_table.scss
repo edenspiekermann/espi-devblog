@@ -1,41 +1,41 @@
 table {
   width: 100%;
+}
 
-  td, th {
-    padding: 10px;
-  }
+td, th {
+  padding: ($spacing-unit / 2);
+}
 
-  tr {
-    border-bottom: 1px solid rgba(black, 0.1);
+tr {
+  border-bottom: 1px solid rgba(black, 0.1);
+}
+
+thead {
+  text-align: left;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  table, thead, tbody, tr, td, th {
+    display: block;
   }
 
   thead {
-    text-align: left;
-    font-weight: bold;
+    position: absolute;
+    opacity: 0;
+    clip: rect(0 0 0 0);
   }
 
-  @media only screen and (max-width: 600px) {
-    &, thead, tbody, tr, td, th {
-      display: block;
-    }
+  tr {
+    padding: ($spacing-unit / 2) 0;
+  }
 
-    thead {
-      position: absolute;
-      opacity: 0;
-      clip: rect(0 0 0 0);
-    }
+  td[data-label] {
+    padding: 0;
+  }
 
-    tr {
-      padding: 0.5em 0;
-    }
-
-    td[data-label] {
-      padding: 0;
-    }
-
-    td[data-label]::before {
-      content: attr(data-label) ': ';
-      color: #999;
-    }
+  td[data-label]::before {
+    content: attr(data-label) ': ';
+    color: #999;
   }
 }

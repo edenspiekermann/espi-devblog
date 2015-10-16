@@ -12,3 +12,4 @@ github_username:  edenspiekermann
 
 # Build settings
 markdown: kramdown
+permalink: pretty

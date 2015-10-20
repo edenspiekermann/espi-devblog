@@ -1,10 +1,9 @@
 .header {
   position: relative;
   margin-bottom: ($spacing-unit * 2);
-}
-
-.header > .container {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-image: url('../assets/images/espi-dev-blog-header.jpg');
+  background-size: cover;
+  padding: 1em 0;
 }
 
 .header__logo {

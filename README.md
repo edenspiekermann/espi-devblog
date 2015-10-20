@@ -1,5 +1,11 @@
-# espi-devblog
-Edenspiekermann Developer Blog
+# The ESPI Developer Blog
+
+Rumblings from the devs at Edenspiekermann. Front-end, back-end, deep-end.
+
+### [http://dev.edenspiekermann.com](http://dev.edenspiekermann.com)
+
+
+Run locally:
 
 ```
 $ cd espi-devblog/

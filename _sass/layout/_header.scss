@@ -1,9 +1,13 @@
 .header {
   position: relative;
   margin-bottom: $spacing-unit;
-  background-image: url('../assets/images/espi-dev-blog-header.jpg');
-  background-size: cover;
   padding: 1em 0;
+  background-size: cover;
+  background-image: url('../assets/images/espi-dev-blog-header--small.jpg');
+
+  @media only screen and (min-width: 600px) {
+    background-image: url('../assets/images/espi-dev-blog-header.jpg');
+  }
 }
 
 .header__logo {

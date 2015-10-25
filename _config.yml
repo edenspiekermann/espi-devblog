@@ -7,6 +7,9 @@ url: "http://dev.edenspiekermann.com" # the base hostname & protocol for your si
 twitter_username: edenspiekermann
 github_username:  edenspiekermann
 
+sass:
+  style: compressed
+
 # Build settings
 markdown: kramdown
 permalink: pretty

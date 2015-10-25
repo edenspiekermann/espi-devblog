@@ -48,7 +48,7 @@ JavaScript is an extremely expressive language, and ES6 even more so. But sorely
 
 ### Takeaway
 
-The component architecture of a React application is extraordinarily conducive to stronger type checking, and React’s built-in `propTypes` makes it even more so. There is really no excuse for not using this functionality, although you certainly could. Omit it at your own peril if your application needs to scale.
+The component architecture React applications is extraordinarily conducive to stronger type checking, and React’s built-in `propTypes` makes it even more so. There is really no excuse for not using this functionality, although you certainly could. Omit it at your own peril if your application needs to scale.
 
 Empirical evidence from [Kleinschmager, Hanenberg and others](http://pleiad.dcc.uchile.cl/papers/2012/kleinschmagerAl-icpc2012.pdf) shows that static type checking had a positive impact on six of nine programming tests in their research. It’s no longer just a programming trope to claim that stronger type checking leads to more maintainable software. So for a weakly typed language like JavaScript, we are served well to enforce type checks in other ways, within the architecture of our applications.
 

@@ -3,11 +3,11 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: inherit;
+    color: darken($brand-color, 5%);
   }
 
   &:hover {
-    color: inherit;
+    color: darken($brand-color, 10%);
     text-decoration: underline;
   }
 }

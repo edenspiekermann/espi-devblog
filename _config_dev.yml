@@ -1,3 +1,5 @@
 # dev environment only
 baseurl: ""
 url: ""
+sass:
+  style: expanded

@@ -6,6 +6,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://dev.edenspiekermann.com" # the base hostname & protocol for your site
 twitter_username: edenspiekermann
 github_username:  edenspiekermann
+logo_image: /assets/images/espi-dev-blog-logo.png
+
+sass:
+  style: compressed
 
 # Build settings
 markdown: kramdown

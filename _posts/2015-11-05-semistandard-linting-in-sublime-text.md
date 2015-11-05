@@ -33,3 +33,7 @@ $ nvm alias default stable
 ```
 
 That’s enough for SublimeLinter to run `semistandard`! Also, the best thing is that it uses the local `semistandard` version (installed in your project’s `node_modules` folder as a dependency), which means no version conflicts between developers!
+
+### Going further
+
+Linting in an editor is great for quick feedback, but the real strength in `semistandard` or any linter is automatically linting your whole code base before a `git push`. We've done this with great success using [captain git hook](https://github.com/maxhoffmann/captain-git-hook). Configuring it only needs to be done in your `package.json`.

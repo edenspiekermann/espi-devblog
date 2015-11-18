@@ -4,7 +4,7 @@ layout: post
 title: "Running ES6 code in the browser"
 ---
 
-I recently wanted to create a tiny tiny React component outside of any React project I am currently working on. Something small, to be tested in the browser, just in order to experiment something. It actually took me some time to figure out the best way to work on this, so I thought it might be worth a short blog post in case you are in such a need to.
+I recently wanted to create a tiny tiny React component outside of any React project I am currently working on. Something small, to be tested in the browser, just as an experiment. It actually took me some time to figure out the best way to work on this, so I thought it might be worth a short blog post in case you are in such a need too.
 
 Before getting started, I shall mention that I came to the point where I exclusively write ES6 code (sorry, ES2015…) so I wanted to be able to write my React component in ES6 (oops, I did it again) and compile it to some JavaScript the browser can understand. To do so, there is [Babel](https://babeljs.io/).
 

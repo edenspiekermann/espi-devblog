@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Hugo Giraudel
+author: hugo-giraudel
 title: An introduction to hardware acceleration
 ---
 

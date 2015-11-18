@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Stuart Whitehead
+author: stuart-whitehead
 title: An introduction to regular expressions
 ---
 

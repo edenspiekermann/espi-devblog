@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Eric Schaefer
+author: eric-schaefer
 title: Ensuring Component Stability through Prop Validation
 ---
 

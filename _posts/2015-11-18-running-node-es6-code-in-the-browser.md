@@ -1,6 +1,6 @@
 ---
-author: Hugo Giraudel
 layout: post
+author: hugo-giraudel
 title: "Running ES6 code in the browser"
 ---
 

@@ -1,0 +1,7 @@
+<div class="author">
+  {% assign author = site.data.authors[include.author] %}
+  <div class="author__image-wrapper">
+    <img src="{{ author.image }}" class="author__image" alt="{{ author.name }}’s avatar" />
+  </div>
+  <p class="author__description">{{ author.description }}</p>
+</div>

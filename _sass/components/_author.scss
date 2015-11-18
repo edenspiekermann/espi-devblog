@@ -1,0 +1,25 @@
+.author {
+  padding: $spacing-unit 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #565656;
+  margin-top: $spacing-unit;
+}
+
+.author__image {
+  border-radius: 50%;
+  float: left;
+  margin-right: $spacing-unit;
+  max-width: 100px;
+  margin-bottom: 0;
+}
+
+.author__description {
+  margin-top: 0;
+  font-size: 0.9em;
+  float: left;
+}

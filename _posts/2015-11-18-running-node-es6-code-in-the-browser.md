@@ -18,38 +18,38 @@ Last but not least, I came across [Watchify](https://github.com/substack/watchif
 
 From there, we can create our `package.json` file, starting with (dev)dependencies:
 
-```sh
+{% highlight sh %}
 # Dependencies for the React component itself
 npm install react react-dom --save
 # Development dependencies to compile all the stuff
 npm install babelify browserify --save-dev
-```
+{% endhighlight %}
 
 Now, we only need to create a pair of *npm scripts* to make our life easier and save us from typing some long commands again and again. The first script we need is a *build* task. It runs `browserify` binary on our main file, compile it with `babelify` binary, then output in a new file.
 
-```sh
+{% highlight sh %}
 browserify src/browser.js -t babelify -o dist/index.js
-```
+{% endhighlight %}
 
 Our second script is the watcher. It works exactly the same except it uses `watchify` instead of `browserify`:
 
-```sh
+{% highlight sh %}
 watchify src/browser.js -t babelify -o dist/index.js
-```
+{% endhighlight %}
 
 Last but not least, we put them in our `package.json`:
 
-```json
+{% highlight json %}
 {
   "scripts": {
     "build": "browserify src/browser.js -t babelify -o dist/index.js",
     "watch": "watchify src/browser.js -t babelify -o dist/index.js"
   }
 }
-```
+{% endhighlight %}
 
 Done! At this point, the basic `index.html` page can safely link to `dist/index.js` script which has been converted to ES5 compliant JavaScript, and bundles every dependency needed for the project to work (React and such).
 
-```html
+{% highlight html %}
 <script src="dist/index.js"></script>
-```
+{% endhighlight %}

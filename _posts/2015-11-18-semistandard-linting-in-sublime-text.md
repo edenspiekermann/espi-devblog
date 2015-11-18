@@ -4,8 +4,6 @@ author: Hugo Giraudel
 title: "Semistandard linting in Sublime Text"
 ---
 
-# Semistandard Linting in Sublime Text
-
 At Edenspiekermann, we recently decided to drop a custom [eslint](http://eslint.org/) configuration file and to use [semistandard](https://github.com/Flet/semistandard) instead (we could have used [standard](https://github.com/feross/standard) but we do like semi-colons). This move aims at normalizing our linter configuration across projects in order to facilitate cross-team work.
 
 One challenge has been to enable `semistandard` linting in Sublime Text, since some of us want instant feedback in our code editor. After a few unfortunate failures and a dozen of Google searches, we finally succeeded in making it work. Here is how.

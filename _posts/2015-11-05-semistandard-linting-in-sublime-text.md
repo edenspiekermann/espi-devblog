@@ -36,4 +36,12 @@ That’s enough for SublimeLinter to run `semistandard`! Also, the best thing is
 
 ### Going further
 
-Linting in an editor is great for quick feedback, but the real strength in `semistandard` or any linter is automatically linting your whole code base before a `git push`. We've done this with great success using [captain git hook](https://github.com/maxhoffmann/captain-git-hook). Configuring it only needs to be done in your `package.json`.
+Linting in an editor is great for quick feedback, but the real strength in `semistandard` or any linter is automatically linting the whole code base before a `git push`. We’ve done this with great success using [captain-git-hook](https://github.com/maxhoffmann/captain-git-hook) and configuring it from `package.json`.
+
+Also, to avoid linting the whole code base and possibly having old and unrelated linting issues preventing us from commiting, we only lint changed files thanks to some command line magic:
+
+```sh
+git diff --name-only --staged --diff-filter=ACMRTUXB --relative | grep -E '.jsx?$' | xargs semistandard
+```
+
+Enjoy, and happy coding!

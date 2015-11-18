@@ -10,25 +10,25 @@ One challenge has been to enable `semistandard` linting in Sublime Text, since s
 
 - First, install semistandard into our project’s dev dependencies:
 
-```
+{% highlight sh %}
 $ npm i semistandard --save-dev
-```
+{% endhighlight %}
 
 - Install [SublimeLinter](http://www.sublimelinter.com/en/latest/) package.
 - Install [SublimeLinter-contrib-semistandard](https://github.com/Flet/SublimeLinter-contrib-semistandard) package. This has to be done after having installed SublimeLinter, as it is the core dependency.
 
 At first, we thought this and restarting Sublime Text would be enough, but it was not. Sublime Text’s console (yes, it exists) threw an error like:
 
-```
+{% highlight sh %}
 SublimeLinter: env: node: No such file or directory
-```
+{% endhighlight %}
 
 We use [nvm](https://github.com/creationix/nvm) to handle [npm](https://www.npmjs.com/) versions so there is no global install of npm. Because of this, SublimeLinter could not run semistandard. The solution was simple, we only had to make `nvm` use a default version:
 
 
-```
+{% highlight sh %}
 $ nvm alias default stable
-```
+{% endhighlight %}
 
 That’s enough for SublimeLinter to run `semistandard`! Also, the best thing is that it uses the local `semistandard` version (installed in your project’s `node_modules` folder as a dependency), which means no version conflicts between developers!
 
@@ -38,8 +38,8 @@ Linting in an editor is great for quick feedback, but the real strength in `semi
 
 Also, to avoid linting the whole code base and possibly having old and unrelated linting issues preventing us from commiting, we only lint changed files thanks to some command line magic:
 
-```sh
+{% highlight sh %}
 git diff --name-only --staged --diff-filter=ACMRTUXB --relative | grep -E '.jsx?$' | xargs semistandard
-```
+{% endhighlight %}
 
 Enjoy, and happy coding!

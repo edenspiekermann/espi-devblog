@@ -10,11 +10,14 @@
   margin-top: $spacing-unit;
 }
 
+.author__image-wrapper {
+  float: left;
+  max-width: 150px;
+  margin-right: $spacing-unit;
+}
+
 .author__image {
   border-radius: 50%;
-  float: left;
-  margin-right: $spacing-unit;
-  max-width: 100px;
   margin-bottom: 0;
 }
 

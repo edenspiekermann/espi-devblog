@@ -11,7 +11,7 @@ layout: default
     <li class="post-list__item">
       <a class="post-list__link" href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-list__title">{{ post.title }}</h2>
-        <p class="post-list__meta">By {{ post.author }} — {{ post.date | date: "%B %-d, %Y" }}</p>
+        <p class="post-list__meta">By {{ site.data.authors[post.author].name }} — {{ post.date | date: "%B %-d, %Y" }}</p>
       </a>
     </li>
   {% endfor %}

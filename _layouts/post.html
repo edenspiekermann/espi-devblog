@@ -4,12 +4,13 @@ layout: default
 <div class="article">
 
   <header class="article__header">
-    <p class="article__meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     <h1 class="article__title">{{ page.title }}</h1>
+    <p class="article__meta">{% if page.author %}By {{ site.data.authors[page.author].name }} —{% endif %}{{ page.date | date: "%B %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
   <article class="article__content">
     {{ content }}
   </article>
 
+  {% include author.html author=page.author %}
 </div>

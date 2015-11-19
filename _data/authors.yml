@@ -1,0 +1,12 @@
+hugo-giraudel:
+  name: "Hugo Giraudel"
+  description: "Hugo Giraudel is a CSS goblin, Sass hacker, margin psycho working at Edenspiekermann (Berlin) as a front-end developer."
+  image: "http://app.resrc.it/s=w270,pd2/o=90/http://www.edenspiekermann.com/system/images/W1siZiIsIjIwMTUvMDQvMjcvMTIvMjQvNTIvMjMwL2h1Z29fZ2lyYXVkZWxfc3F1YXJlLmpwZWciXSxbInAiLCJ0aHVtYiIsIjUwMHg1MDAjIl1d/hugo_giraudel_square.jpeg"
+eric-schaefer:
+  name: "Eric Schaefer"
+  description: "Eric Schaefer is a full-stack JavaScript developer at Edenspiekermann. These days he works mainly with React and Node.js. If you can’t find him, he’s probably drumming or making music."
+  image: "http://app.resrc.it/s=w500/o=50(90)/http://www.edenspiekermann.com/system/images/W1siZiIsIjIwMTQvMDYvMjcvMTUvMDgvNTcvNjkxL2VyaWNfc2NoYWVmZXIyLmpwZyJdLFsicCIsInRodW1iIiwiNTAweDUwMCMiXV0/eric-schaefer2.jpg"
+stuart-whitehead:
+  name: "Stuart Whitehead"
+  description: "Stuart Whitehead is a former front-end developer intern at Edenspiekermann (Berlin), particularly skilled with regular expressions."
+  image: "https://pbs.twimg.com/profile_images/618349668116918272/u06JzttW.jpg"

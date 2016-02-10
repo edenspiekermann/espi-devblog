@@ -1,7 +1,7 @@
 ---
 layout: post
 author: hugo-giraudel
-title: Introducting spritesh
+title: Introducing spritesh
 ---
 
 We at Edenspiekermann are big fans of [Gulp](http://gulpjs.com/). We use it in most of our projects, even Rails ones to replace or rather connect to the assets pipeline. Gulp is usually responsible for most of our build process in basically any project.

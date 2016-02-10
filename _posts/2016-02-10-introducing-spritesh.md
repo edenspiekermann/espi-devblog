@@ -28,7 +28,7 @@ npm install spritesh -g
 
 Given how little this script does, using it should be pretty straightforward. Also all options have sensible defaults so that you can actually get started without struggling too much.
 
-Basically you give it an input folder (the current one by default), and spritesh will generate the sprite from the SVG files found. You can then specify a custom viewbow, and a prefix for the `id` attribute of each icon. That’s pretty much it. The rough version would be:
+Basically you give it an input folder (the current one by default), and spritesh will generate the sprite from the SVG files found. You can then specify a custom viewbox, and a prefix for the `id` attribute of each icon. That’s pretty much it. The rough version would be:
 
 {% highlight markdown %}
 Usage: spritesh [options]

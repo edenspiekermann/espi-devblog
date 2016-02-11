@@ -6,7 +6,7 @@ layout: post
 
 If there’s one thing I try to push forward more and more at Edenspiekermann, it’s accessibility. I can’t help but feel that we don’t care enough about assistive technology users. That’s a shame, really. It’s not that we don’t want to—it’s more like we don’t really know where to start.
 
-Almost all projects involve some form of modal dialog at one point or another. Just recently, I implemented a small one page site which included a modal for the registration form. I will not express myself on how bad I think this UX pattern is as it is out of the scope of this article. In any case, accessible modals are hard. Very hard.
+Almost all projects involve some form of modal dialog at one point or another. However, accessibility is all too often set aside in favor of quick implementation. Truth is, accessible modals are hard. Very hard.
 
 Fortunately, there is a super clever guy named [Greg Kraus](https://github.com/gdkraus) who implemented an accessible modal dialog a few years ago and [open-sourced it on GitHub](https://github.com/gdkraus/accessible-modal-dialog). Now that’s nice!
 

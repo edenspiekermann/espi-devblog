@@ -4,6 +4,9 @@ author: hugo-giraudel
 layout: post
 ---
 
+*If you’re only here for the code, go straight to the [GitHub repository](https://github.com/edenspiekermann/accessible-modal-dialog).*
+
+
 If there’s one thing I try to push forward more and more at Edenspiekermann, it’s accessibility. I can’t help but feel that we don’t care enough about assistive technology users. That’s a shame, really. It’s not that we don’t want to—it’s more like we don’t really know where to start.
 
 Almost all projects involve some form of modal dialog at one point or another. However, accessibility is all too often set aside in favor of quick implementation. Truth is, accessible modals are hard. Very hard.

@@ -9,6 +9,7 @@ github_username:  edenspiekermann
 logo_image: /assets/images/espi-dev-blog-logo.png
 
 sass:
+  sass_dir: assets/sass
   style: compressed
 
 # Build settings

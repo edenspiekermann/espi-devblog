@@ -4,14 +4,19 @@ layout: default
 
 <p><strong>We, the development team at <a href="http://edenspiekermann.com">Edenspiekermann</a>, like to gather around on a regular basis to share and learn together. This blog aims at reporting the fruit of our research.</strong></p>
 
-<p>We also have a <a href="https://github.com/edenspiekermann/ama">“Ask Us Anything” GitHub repository</a> so you can ask us any question you want, even non-technical questions. Be sure to have a look at closed issues!</p>
+<p>You might also like…</p>
 
-<ul class="post-list">
+<ul>
+  <li>… to find more about <a href="/oss">our open-source projects</a>.</li>
+  <li>… to <a href="https://github.com/edenspiekermann/ama">ask us a question</a> about literally anything.</li>
+</ul>
+
+<ul class="list">
   {% for post in site.posts %}
-    <li class="post-list__item">
-      <a class="post-list__link" href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-list__title">{{ post.title }}</h2>
-        <p class="post-list__meta">By {{ site.data.authors[post.author].name }} — {{ post.date | date: "%B %-d, %Y" }}</p>
+    <li class="list__item">
+      <a class="list__link" href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="list__title">{{ post.title }}</h2>
+        <p class="list__meta">By {{ site.data.authors[post.author].name }} — {{ post.date | date: "%B %-d, %Y" }}</p>
       </a>
     </li>
   {% endfor %}

@@ -1,0 +1,16 @@
+- name: Accessible Modal Dialog
+  url: https://github.com/edenspiekermann/accessible-modal-dialog
+  description: A tiny script to make modal dialogs accessible to assistive technology users.
+  maintained_by: hugo-giraudel
+
+- name: spritesh
+  url: https://github.com/edenspiekermann/sprite.sh
+  description: A Bash script to build a SVG sprite from a folder of SVG files.
+  maintained_by: hugo-giraudel
+
+- name: Faster React Tabs
+  url: https://github.com/edenspiekermann/faster-react-tabs
+  description: A flexible React components to render accessible tabs.
+  maintained_by: 
+    - hugo-giraudel
+    - eric-schaefer

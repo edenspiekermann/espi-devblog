@@ -16,7 +16,7 @@ So I built [a tiny script](https://github.com/edenspiekermann/sprite.sh) to do t
 
 ## Installing it
 
-[spritesh](https://github.com/edenspiekermann/sprite.sh) is better install globally (with `-g`) than locally but feel free to do otherwise.
+[spritesh](https://github.com/edenspiekermann/sprite.sh) is best installed globally (with `-g`) than locally but feel free to do otherwise.
 
 {% highlight sh %}
 npm install spritesh -g

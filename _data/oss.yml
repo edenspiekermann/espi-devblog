@@ -14,3 +14,8 @@
   maintained_by: 
     - hugo-giraudel
     - eric-schaefer
+
+- name: transync
+  url: https://github.com/edenspiekermann/transync
+  description: A Node.js script to synchronise translation files.
+  maintained_by: hugo-giraudel

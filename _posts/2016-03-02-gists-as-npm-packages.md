@@ -37,6 +37,9 @@ Or if you want to automatically do it after an install, you can have a post-inst
 {
   "scripts": {
     "postinstall": "cp node_modules/blingdotjs/bling.js assets/js/vendor"
+  },
+  "dependencies": {
+    "blingdotjs": "gist:7d867cda127e64d38f28"
   }
 }
 {% endhighlight %}

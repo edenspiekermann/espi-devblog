@@ -1,4 +1,9 @@
-- name: a11y-dialog
+- name: A11y Toggle
+  url: https://github.com/edenspiekermann/a11y-toggle
+  description: A tiny script to make gaccessible content toggles.
+  maintained_by: hugo-giraudel
+
+- name: A11y Dialog
   url: https://github.com/edenspiekermann/a11y-dialog
   description: A tiny script to make modal dialogs accessible to assistive technology users.
   maintained_by: hugo-giraudel

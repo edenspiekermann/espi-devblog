@@ -1,5 +1,5 @@
-- name: Accessible Modal Dialog
-  url: https://github.com/edenspiekermann/accessible-modal-dialog
+- name: a11y-dialog
+  url: https://github.com/edenspiekermann/a11y-dialog
   description: A tiny script to make modal dialogs accessible to assistive technology users.
   maintained_by: hugo-giraudel
 

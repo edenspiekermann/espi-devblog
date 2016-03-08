@@ -25,7 +25,7 @@ Very good. Now what happens if we call `makeSalad(..)` without any ingredients? 
 
 {% highlight js %}
 var salad = makeSalad();
-// -> Error: ingredients.join is not a function
+// -> Error: Cannot read property 'join' of undefined
 {% endhighlight %}
 
 Indeed. Because we did not pass `ingredients`, its value is `undefined` which does not have a `join(..)` function. A simple fix would be to set a default value for `ingredients`.
@@ -58,7 +58,7 @@ var salad = makeSalad({
   tomatoes: 2,
   sauce: '3 tea spoons'
 });
-// -> Error: Cannot read property 'join' of undefined
+// -> Error: ingredients.join is not a function
 {% endhighlight %}
 
 Again, `ingredients` is an object and an object does not have a `join(..)` function. To prevent this code from failing, we could add an extra check to our function to make sure that the given arguments is an array.

@@ -1,5 +1,5 @@
 ---
-title: "Running Jekyll on Heroku, The Easier Way"
+title: "Running a Jekyll Site on Heroku, The Easier Way"
 author: eric-schaefer
 layout: post
 ---

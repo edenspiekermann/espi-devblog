@@ -8,7 +8,7 @@ Recently I’ve been working on a prototype where I simply needed to serve the s
 
 Wrong. Turns out that for every URL that isn’t just a single page on root `index.html`, you need to add a custom `config.ru` to your project with all kinds of `rack-rewrite` rules to remove the `.html` extensions from URLs, add a `Gemfile`, and the list goes on… just to get Heroku to serve static files with a `Rack` server.
 
-Dave Rupert’s article on [deploying Jekyll to Heroku using Dropbox](http://daverupert.com/2015/02/jekyll-heroku-dropbox/) got me partially there, but it seemed to me like his solution could be simplified, and better yet, support nice clean URLS for more than one page.
+Dave Rupert’s article on [deploying Jekyll to Heroku using Dropbox](http://daverupert.com/2015/02/jekyll-heroku-dropbox/) got me partially there, but it seemed to me like his solution could be simplified, and better yet, support nice clean URLs for more than one page.
 
 So, here’s an improved approach to run a compiled Jekyll site on Heroku.
 

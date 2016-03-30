@@ -4,7 +4,7 @@ author: eric-schaefer
 layout: post
 ---
 
-Recently I've been working on a prototype where I simply needed to serve the static files compiled by Jekyll, on Heroku. Seems straightforward right?
+Recently I've been working on a prototype where I simply needed to serve the static files compiled by [Jekyll](https://jekyllrb.com/), on Heroku. Seems straightforward right?
 
 Wrong. Turns out that for every URL that isn't just a single page on root `index.html`, you need to add a custom `config.ru` to your project with all kinds of `rack-rewrite` rules to remove the `.html` extensions from URLs, add a `Gemfile`, and the list goes on... just to get Heroku to serve static files with a `Rack` server.
 
@@ -39,3 +39,7 @@ $ echo 'web: vendor/bin/heroku-php-apache2 _site/' > Procfile
 ```
 
 This should tell apache to serve up the generated assets in your `_site` folder.
+
+## Summary
+
+In short, we are accomplishing a quick way to serve static assets, and get the basic URL rewriting behavior that we expect from the folder structure of a Jekyll project. The automatic URL rewrites are what ultimately convinced me of using Heroku's PHP buildpack in this scenario. Hopefully it can help some of you agonizing over Rack configuration.

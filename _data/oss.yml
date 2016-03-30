@@ -1,3 +1,8 @@
+- name: Outline Audit
+  url: https://github.com/edenspiekermann/outline-audit
+  description: A small script to audit the document outline.
+  maintained_by: hugo-giraudel
+
 - name: A11y Toggle
   url: https://github.com/edenspiekermann/a11y-toggle
   description: A tiny script to make gaccessible content toggles.

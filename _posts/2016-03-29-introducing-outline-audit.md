@@ -38,11 +38,17 @@ One last thing to point out on this topic: the theory is so far away from the cu
 
 ## How to use it?
 
-As of today, the repository just provides the script so I’d say there are still room for improvement on this side. What you could do is save it as a snippet in your DevTools (see next screenshot).
+Given the size of the script (and that it doesn’t have any dependency), there are quite a few ways to use it. What you could do is save it as a snippet in your DevTools (see next screenshot).
 
 ![Saving Outline Audit as a DevTools snippet](http://i.imgur.com/2kDj2ZI.png)
 
-I guess we could also make a bookmarklet out of it, or even a Chrome extension although that’s probably unnecessary (and proprietary).
+Or you could also have a bookmarklet for this:
+
+{% highlight html %}
+&lt;a href="javascript:!function(e,n,t){n=e.body,t=e.createElement('script'),t.src='https://cdn.rawgit.com/edenspiekermann/outline-audit/master/index.js',t.async=!0,t.onload=function(){new Outline().warn()},n.appendChild(t)}(document);">Outline Audit&lt;/a>
+{% endhighlight %}
+
+<a href="javascript:!function(e,n,t){n=e.body,t=e.createElement('script'),t.src='https://cdn.rawgit.com/edenspiekermann/outline-audit/master/index.js',t.async=!0,t.onload=function(){new Outline().warn()},n.appendChild(t)}(document);">Outline Audit</a>
 
 Anyway. To use it, instanciate an `Outline` on the element you want (default is the `document` element).
 

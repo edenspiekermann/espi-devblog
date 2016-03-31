@@ -45,10 +45,10 @@ Given the size of the script (and that it doesn’t have any dependency), there 
 Or you could also have a bookmarklet for this:
 
 {% highlight html %}
-<a href="javascript:!function(e,n,t){n=e.body,t=e.createElement('script'),t.src='https://cdn.rawgit.com/edenspiekermann/outline-audit/master/index.js',t.async=!0,t.onload=function(){new Outline().warn()},n.appendChild(t)}(document);">Outline Audit</a>
+<a href="javascript:(function(e,n,t){n=e.body,t=e.createElement('script'),t.src='https://cdn.rawgit.com/edenspiekermann/outline-audit/master/index.js',t.async=!0,t.onload=function(){new Outline().warn()},n.appendChild(t)}(document));">Outline Audit</a>
 {% endhighlight %}
 
-<a href="javascript:!function(e,n,t){n=e.body,t=e.createElement('script'),t.src='https://cdn.rawgit.com/edenspiekermann/outline-audit/master/index.js',t.async=!0,t.onload=function(){new Outline().warn()},n.appendChild(t)}(document);">Outline Audit</a>
+<a href="javascript:(function(e,n,t){n=e.body,t=e.createElement('script'),t.src='https://cdn.rawgit.com/edenspiekermann/outline-audit/master/index.js',t.async=!0,t.onload=function(){new Outline().warn()},n.appendChild(t)}(document));">Outline Audit</a>
 
 Anyway. To use it, instanciate an `Outline` on the element you want (default is the `document` element).
 

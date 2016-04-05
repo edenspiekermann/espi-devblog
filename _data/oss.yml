@@ -1,3 +1,8 @@
+- name: iframify
+  url: https://github.com/edenspiekermann/iframify
+  description: A small script to replace a node with an iframe version of itself.
+  maintained_by: hugo-giraudel
+
 - name: Outline Audit
   url: https://github.com/edenspiekermann/outline-audit
   description: A small script to audit the document outline.

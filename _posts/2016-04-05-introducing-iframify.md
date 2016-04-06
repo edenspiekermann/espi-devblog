@@ -41,6 +41,4 @@ This is a nice and handy solution but it still lacks a few things. The first bei
 
 Also, no JavaScript is being imported at all. We could design a solution to import specific JavaScript code, but right now it did not seem necessary. Living styleguide usually are about visual regression and documentation, and the current problem was really about breakpoints and media queries so JS is kind of out of the scope.
 
-Also, tests. I think that would be nice to write some tests to make sure that styles are getting correctly imported, and this kind of thing. 
-
 And of course, anything you can think of to improve the beast. Happy coding!

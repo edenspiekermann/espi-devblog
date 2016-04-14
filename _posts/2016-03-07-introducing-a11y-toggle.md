@@ -42,19 +42,17 @@ You can install it through [npm](https://www.npmjs.com/package/a11y-toggle):
 npm install --save a11y-toggle
 {% endhighlight %}
 
-Include the script in your app / pages and you should be good to go. You only have to add a `data-a11y-toggle` attribute to the toggle itself, and an `aria-controls` attribute linking to the collapsible element. For instance:
+Include the script in your app / pages and you should be good to go. You only have to add a `data-a11y-toggle` attribute linking to the collapsible element’s `id`. For instance:
 
 {% highlight html %}
-<button data-a11y-toggle
-        type="button"
-        aria-controls="content-container">Toggle content</button>
+<button data-a11y-toggle="content-container">Toggle content</button>
 
 <div id="content-container">
   Here is some content that can be be toggled visible or invisible.
 </div> 
 {% endhighlight %}
 
-a11y-toggle is adding the initial `aria-hidden` and `aria-expanded` elements so you don’t have to worry about them.
+a11y-toggle is adding the initial `aria-hidden`, `aria-controls` and `aria-expanded` attributes so you don’t have to worry about them.
 
 ## What’s next?
 

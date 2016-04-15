@@ -6,7 +6,7 @@ layout: post
 
 Lately I have been writing tests for a large JavaScript project. When testing helper functions, it occurred to me developers usually write the code for the perfect scenario without considering anything that could go wrong.
 
-Let’s imagine with have a function to make a salad. This function expects an array of ingredients, put them together and return the result. In JavaScript, its simplest form would be:
+Let’s imagine we have a function to make a salad. This function expects an array of ingredients, put them together and return the result. In JavaScript, its simplest form would be:
 
 {% highlight js %}
 function makeSalad (ingredients) {

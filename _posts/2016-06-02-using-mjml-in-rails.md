@@ -16,10 +16,10 @@ Amaphiko is a [Rails](http://rubyonrails.org/) app. Therefore, I needed a way to
 
 While MJML is fairly recent, I was pleased to see there already is a fresh gem to plug it into Rails, called [mjml-rails](https://github.com/sighmon/mjml-rails).
 
-First step would be to add it to the Gemfile. Beware though, the gem needs to required from within the Gemfile itself to work properly. Not quite usual but that’s how it work.
+First step would be to add it to the Gemfile.
 
 {% highlight bash %}
-gem 'mjml-rails', '~> 2.1.1', require: 'mjml'
+gem 'mjml-rails', '~> 2.2.0'
 {% endhighlight %}
 
 The thing is, this gem is basically just a wrapper around the [`mjml` npm package](https://www.npmjs.com/package/mjml). Because of this, it needs `mjml` to be installed independently. You can either install it globally to avoid adding a Node.js dependency to your project:

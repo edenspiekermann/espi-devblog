@@ -34,10 +34,10 @@ Enter…
 
 Many of our projects are already built with a component-based approach. This is a wonderful side-effect of using [React](https://facebook.github.io/react/). All UI elements in a well-built React application end up being self-encapsulated (markup and styles bundled together) and composable. This simple fact has far-reaching implications:
 
-1. We can import all our components and render each one into a library.
-2. We can minimize the chances of dead code and designs.
-3. We can eliminate duplicated effort to keep production elements in sync with the styleguide.
-4. We can auto-document how often and where a component is used.
+* We can import all our components and render each one into a library.
+* We can minimize the chances of dead code and designs.
+* We can eliminate duplicated effort to keep production elements in sync with the styleguide.
+* We can auto-document how often and where a component is used.
 
 This all sounds great, yeah?
 
@@ -82,7 +82,7 @@ This one falls more into the “developer tool” category, but is interesting n
 
 > BlueKit automatically generates a library from your React components with editable props and live preview.
 
-This one is seems like an underdog in terms of Github stars, but looks really polished.
+This one seems like an underdog in terms of Github stars, but looks really polished.
 
 ![BlueKit](https://cloud.githubusercontent.com/assets/547148/17784131/2c448104-6530-11e6-8efb-a01c2071cef7.png)
 
@@ -90,6 +90,8 @@ This one is seems like an underdog in terms of Github stars, but looks really po
 ### [Atellier](http://scup.github.io/atellier)
 
 > The smartest way to share interactive components with your team
+
+A very slick component library, although the last release was nearly five months ago.
 
 ![Atellier](http://scup.github.io/atellier/images/browser-window.png)
 

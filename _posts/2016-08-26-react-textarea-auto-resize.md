@@ -39,3 +39,5 @@ It’s not the most original idea, but I figured that an implementation in React
 Or [get a full example in JSFiddle](https://jsfiddle.net/708fp9t2/22/).
 
 <script src="https://gist.github.com/eschaefer/a0da539b19ac0f7765fa73216a3bf1b0.js"></script>
+
+_Update 8/29_: Coincidentally it turns out that Edenspiekermann alumnus Max Hoffman has an excellent [vanilla JS solution](https://maximilianhoffmann.com/posts/autoresizing-textareas) to this as well. It's worth mentioning here, in case you need something non React-specific.

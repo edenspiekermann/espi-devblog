@@ -82,7 +82,7 @@ otherdomain:
   timezone: 'Europe/London'
 ```
 
-We wrap the site settings with a simple ruby class set it using an application controller concern.
+We wrap the site settings with a simple `Site.rb` ruby class loaded it using an application controller concern.
 
 ```ruby
 # app/controllers/concerns/multisite.rb

@@ -10,3 +10,7 @@ stuart-whitehead:
   name: "Stuart Whitehead"
   description: "Stuart Whitehead is a former front-end developer intern at Edenspiekermann (Berlin), particularly skilled with regular expressions."
   image: "https://pbs.twimg.com/profile_images/618349668116918272/u06JzttW.jpg"
+niall-burkley:
+  name: "Niall Burkley"
+  description: "Niall Burkley is a backend developer at Edenspiekermann. One day he started traveling, got very lost and ended up writing ruby in Berlin."
+  image: "https://pbs.twimg.com/profile_images/568468148861820928/lNDv4wfl_400x400.jpeg"

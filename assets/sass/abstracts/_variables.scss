@@ -1,6 +1,10 @@
 $spacing-unit: 30px;
-$brand-color: #00b4f1;
-$alternate-brand-color: #E50050;
-$grey: #828282;
-$grey-light: lighten($grey, 40%);
-$grey-dark: darken($grey, 25%);
+
+/**
+ * Color values at https://www.edenspiekermann.com/styleguide/index.html#colors
+ */
+$brand-color: #ff4350;
+$alternate-brand-color: #00b4f1;
+$grey: #999;
+$grey-light: #e7f0f0;
+$grey-dark: #6f7476;

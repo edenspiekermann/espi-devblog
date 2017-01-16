@@ -8,8 +8,12 @@
 }
 
 .list__title {
-  font-size: 1.25em;
+  font-size: 1em;
   margin: 0 0 0.25em;
+
+  @media (min-width: 801px) {
+    font-size: 1.25em;
+  }
 }
 
 .list__link {

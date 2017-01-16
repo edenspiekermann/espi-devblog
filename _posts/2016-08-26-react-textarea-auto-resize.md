@@ -2,9 +2,9 @@
 title: "Stranger Forms: Textarea Auto Resize with React"
 author: eric-schaefer
 layout: post
+mainImage: "https://cloud.githubusercontent.com/assets/547148/18024962/171ce86c-6bce-11e6-8216-5ab7f361fdde.jpg"
+mainImageAlt: "I freaking love this show"
 ---
-
-![I freaking love this show.](https://cloud.githubusercontent.com/assets/547148/18024962/171ce86c-6bce-11e6-8216-5ab7f361fdde.jpg)
 
 _tldr:_ [here’s the code](#snippet) if that’s what you’re here for.
 

@@ -1,46 +1,19 @@
 .list {
-  list-style: none;
   padding: 0;
   margin: 40px 0 0;
-  font-family: 'ESPI Slab', 'Arial', sans-serif;
 }
 
 .list__item {
-  padding: 15px 30px 15px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid transparent;
-  position: relative;
-
-  &::before {
-    content: '';
-    opacity: 0;
-    position: absolute;
-    width: 10px;
-    top: -1px;
-    right: 100%;
-    bottom: -1px;
-    background-color: $brand-color;
-  }
-
-  &:hover {
-    padding-left: 15px;
-    margin-left: -15px;
-    border-bottom-color: rgba(0, 0, 0, 0.1);
-    background-color: #fafafa;
-  }
-
-  &:hover + & {
-    border-top-color: transparent;
-  }
-
-  &:hover::before {
-    opacity: 1;
-  }
+  margin: 0 0 1.5em;
 }
 
 .list__title {
-  margin: 0;
-  font-size: 1.25em;
+  font-size: 1em;
+  margin: 0 0 0.25em;
+
+  @media (min-width: 801px) {
+    font-size: 1.25em;
+  }
 }
 
 .list__link {
@@ -63,5 +36,5 @@
 }
 
 .list__description {
-  margin-top: 0;
+  margin: 0;
 }

@@ -3,20 +3,26 @@ layout: default
 title: "Open source projects"
 ---
 
-<p>We use so many open-source projects in our daily development life that we think it’s only fair to give back when we can. Find below the open-source projects we maintain for the community.</p>
+<div class="content-body">
+  <div class="copy">
 
-<ul class="list">
-  {% for project in site.data.oss %}
-    <li class="list__item">
-      <a class="list__link" href="{{ project.url }}">
-        <h2 class="list__title">{{ project.name }}</h2>
-        <p class="list__description">{{ project.description }}</p>
-        <p class="list__meta">Maintained by
-          {% for author in project.maintained_by %}
-            {{ site.data.authors[author].name }}{% unless forloop.last %},{% endunless %}
-          {% endfor %}
-        </p>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+    <p>We use so many open-source projects in our daily development life that we think it’s only fair to give back when we can. Find below the open-source projects we maintain for the community.</p>
+
+    <ul class="list">
+      {% for project in site.data.oss %}
+        <li class="list__item">
+          
+          <h2 class="list__title"><a class="list__link" href="{{ project.url }}">{{ project.name }}</a></h2>
+          <p class="list__description">{{ project.description }}</p>
+          <p class="list__meta">Maintained by
+            {% for author in project.maintained_by %}
+              {{ site.data.authors[author].name }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          </p>
+          
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</div>

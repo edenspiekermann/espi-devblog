@@ -10,12 +10,3 @@ img {
   margin-bottom: ($spacing-unit * 1.5);
 }
 
-ul:not([class]), ol:not([class]) {
-  padding-left: 0;
-}
-
-li:not([class]) {
-  list-style-position: inside;
-  text-indent: -1em;
-  padding-left: 1em;
-}

@@ -4,13 +4,11 @@
 @charset 'utf-8';
 
 @import
-  'https://www.edenspiekermann.com/assets/scss/all.css',
-
-
   'abstracts/variables',
 
   'vendor/syntax-highlighting',
-  'vendor/normalize',
+
+  'https://www.edenspiekermann.com/assets/scss/all.css',
 
   'base/base',
   'base/layout',
@@ -26,7 +24,5 @@
   'components/link',
   'components/table',
   'components/list',
-  'components/video',
-
-  'pages/article'
+  'components/video'
 ;

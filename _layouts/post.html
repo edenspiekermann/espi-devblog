@@ -1,16 +1,30 @@
 ---
 layout: default
 ---
-<div class="article">
 
-  <header class="article__header">
-    <h1 class="article__title">{{ page.title }}</h1>
-    <p class="article__meta">{% if page.author %}By {{ site.data.authors[page.author].name }} —{% endif %}{{ page.date | date: "%B %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<header class="header-simple header-simple--medium">
+    <h1 class="header-simple__title" itemprop="name">{{ page.title }}</h1>
+</header>
 
-  <article class="article__content">
+<div class="content-body">
+
+  <div class="content-body__meta">
+        
+    <div class="content-meta">
+      <time itemprop="datePublished" class="content-meta__date" datetime="{{ page.date | date: "%Y-%m-%d, " }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+
+    {% if page.author %}
+        <div class="content-meta__author" itemprop="author">
+          By {{ site.data.authors[page.author].name }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="copy copy--chapter">
     {{ content }}
-  </article>
+  </div>
 
   {% include author.html author=page.author %}
+
 </div>

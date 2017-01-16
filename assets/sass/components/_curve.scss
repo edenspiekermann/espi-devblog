@@ -1,0 +1,55 @@
+/**
+ * THIS IS AN EXTENSION OF THE CURVE COMPONENT FROM MAIN SITE
+ *
+ * 1. Set height explicitly since all children are absolutely positioned
+ *    (to make it easier to work with placement from wrappers
+ *    and to make sure it shows up in styleguide)
+ * 2. Ensure that component's dimensions match the placement of rendered chars,
+ *    even though they're pulled out of the container.
+ *    (to make it easier to work with placement from wrappers)
+ */
+.curve--blog-posts {
+  height: 4.8em; /* 1 */
+  margin-left: 3.75em; /* 2 */
+  width: 2.4em; /* 2 */
+}
+
+.curve--blog-posts .curve__char--1 {
+  transform: rotate(-90.25deg);
+}
+
+.curve--blog-posts .curve__char--2 {
+  transform: rotate(-77.7deg);
+}
+
+.curve--blog-posts .curve__char--3 {
+  transform: rotate(-72deg);
+}
+
+.curve--blog-posts .curve__char--4 {
+  transform: rotate(-60.5deg);
+}
+
+.curve--blog-posts .curve__char--5 {
+  transform: rotate(-50.25deg);
+}
+
+.curve--blog-posts .curve__char--6 {
+  transform: rotate(-42.5deg);
+}
+
+.curve--blog-posts .curve__char--7 {
+  transform: rotate(-31.55deg);
+}
+
+.curve--blog-posts .curve__char--8 {
+  transform: rotate(-20.3deg);
+}
+
+.curve--blog-posts .curve__char--9 {
+  transform: rotate(-10.5deg);
+}
+
+.curve--blog-posts .curve__char--10 {
+  transform: rotate(-2.7deg);
+}

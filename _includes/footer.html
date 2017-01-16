@@ -1,5 +1,31 @@
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <p class="footer__content">&copy;&nbsp;<a href="http://edenspiekermann.com" target="_blank">Edenspiekermann</a> {{ site.time | date: '%Y' }}</p>
-  </div>
-</footer>
+<section class="footer">
+
+  <footer role="contentinfo" class="footer__imprint-and-stuff">
+    <div class="footer__follow">
+      <a href="http://twitter.com/edenspiekermann" class="icon-links__link icon-links__link--inverted">
+        <span class="icon-links__icon-wrapper">
+          <svg class="icon-links__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
+        </span>
+      </a>
+      <a href="http://facebook.com/edenspiekermann" class="icon-links__link icon-links__link--inverted">
+        <span class="icon-links__icon-wrapper">
+          <svg class="icon-links__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
+        </span>
+      </a>
+      <a href="https://de.linkedin.com/company/edenspiekermann" class="icon-links__link icon-links__link--inverted">
+        <span class="icon-links__icon-wrapper">
+          <svg class="icon-links__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use></svg>
+        </span>
+      </a>
+    </div>
+    <div class="footer__copyright">
+      &copy;&nbsp;<a href="http://edenspiekermann.com" target="_blank" class="footer__link">edenspiekermann</a> {{ site.time | date: '%Y' }}
+    </div>
+    <div class="footer__links-container">
+      <a href="https://jobs.edenspiekermann.com/" class="footer__link">Jobs</a>
+      <a href="https://edenspiekermann.com/contact" class="footer__link">Contact</a>
+      <a href="https://edenspiekermann.com/content/imprint" class="footer__link">Legal Notice</a>
+    </div>
+  </footer>
+
+</section>

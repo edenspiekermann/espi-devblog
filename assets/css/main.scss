@@ -4,27 +4,22 @@
 @charset 'utf-8';
 
 @import
+  'https://www.edenspiekermann.com/assets/scss/all.css',
+
   'abstracts/variables',
 
   'vendor/syntax-highlighting',
-  'vendor/normalize',
-
-  'base/fonts',
-  'base/base',
-  'base/layout',
 
   'layout/header',
   'layout/footer',
 
   'components/author',
-  'components/icon',
-  'components/blockquote',
+  'components/blog-posts-list',
   'components/code',
+  'components/curve',
+  'components/homepage-head',
   'components/image',
-  'components/link',
   'components/table',
   'components/list',
-  'components/video',
-
-  'pages/article'
+  'components/video'
 ;

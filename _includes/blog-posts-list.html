@@ -1,0 +1,30 @@
+<div class="blog-posts-list">
+  <div class="blog-posts-list__curve">
+
+    <span class="curve curve--blog-posts">
+      <span class="curve__char curve__char--1">B</span>
+      <span class="curve__char curve__char--2">l</span>
+      <span class="curve__char curve__char--3">o</span>
+      <span class="curve__char curve__char--4">g</span>
+      <span class="curve__char curve__char--5">&nbsp;</span>
+      <span class="curve__char curve__char--6">p</span>
+      <span class="curve__char curve__char--7">o</span>
+      <span class="curve__char curve__char--8">s</span>
+      <span class="curve__char curve__char--9">t</span>
+      <span class="curve__char curve__char--10">s</span>
+    </span>
+  </div>
+
+  <div class="blog-posts-list__list">
+    <ul class="list">
+      {% for post in site.posts %}
+        <li class="list__item">
+
+          <h2 class="list__title"><a class="list__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          <p class="list__meta">By {{ site.data.authors[post.author].name }} — {{ post.date | date: "%B %-d, %Y" }}</p>
+          
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

@@ -2,22 +2,24 @@
 layout: default
 ---
 
-<p><strong>We, the development team at <a href="http://edenspiekermann.com">Edenspiekermann</a>, like to gather around on a regular basis to share and learn together. This blog aims at reporting the fruit of our research.</strong></p>
 
-<p>You might also like…</p>
+<div class="homepage-head homepage-head--small">
+  <div class="homepage-head__text">
+      We’re <a href="http://edenspiekermann.com" class="homepage-head__link">edenspiekermann</a> devs.<br>
+      We code, learn and share.<br />
+      These are some of our learnings.
+  </div>
+</div>
 
-<ul>
-  <li>… to find more about <a href="/oss">our open-source projects</a>.</li>
-  <li>… to <a href="https://github.com/edenspiekermann/ama">ask us a question</a> about literally anything.</li>
-</ul>
+<div class="content-body">
+  <div class="copy">
+    <p>In addition to trawling through our latest interesting blog posts, you might also like to…</p>
 
-<ul class="list">
-  {% for post in site.posts %}
-    <li class="list__item">
-      <a class="list__link" href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="list__title">{{ post.title }}</h2>
-        <p class="list__meta">By {{ site.data.authors[post.author].name }} — {{ post.date | date: "%B %-d, %Y" }}</p>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+    <ul>
+      <li>find more about <a href="/oss">our open-source projects</a>.</li>
+      <li><a href="https://github.com/edenspiekermann/ama">ask us a question</a> about literally anything.</li>
+    </ul>
+  </div>
+</div>
+
+{% include blog-posts-list.html %}

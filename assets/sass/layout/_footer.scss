@@ -4,10 +4,9 @@
   color: #999;
 }
 
-.footer > .container {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.footer a {
-  color: inherit;
+/**
+ * Consider moving to main site styles
+ */
+.footer__imprint-and-stuff:first-child {
+  border-top: 0;
 }

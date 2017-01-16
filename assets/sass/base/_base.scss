@@ -13,6 +13,23 @@ img {
 
 
 /**
+ * An extension modifier to component from main site
+ */
+.homepage-head--small {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: 1025px) {
+    width: 810px;
+
+    .homepage-head__text {
+      font-size: 2.5em;
+    }
+  }
+}
+
+
+/**
  * Consider moving to main site styles
  */
 .footer__imprint-and-stuff:first-child {

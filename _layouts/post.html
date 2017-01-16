@@ -2,23 +2,36 @@
 layout: default
 ---
 
-<header class="header-simple header-simple--medium">
-    <h1 class="header-simple__title" itemprop="name">{{ page.title }}</h1>
-</header>
+
+{% if page.mainImage %}
+  <header class="header-pull">
+    <div class="header-pull__text">
+      <h1 class="header-pull__title" itemprop="name">
+        {{ page.title }}
+      </h1>
+    </div>
+    <div class="header-pull__image-wrapper">
+      <img src="{{ page.mainImage }}" alt="{{ page.mainImageAlt }}" class="header-pull__image">
+    </div>
+  </header>
+{% else %}
+  <header class="header-simple header-simple--medium">
+      <h1 class="header-simple__title" itemprop="name">{{ page.title }}</h1>
+  </header>
+{% endif %}
 
 <div class="content-body">
-
   <div class="content-body__meta">
         
     <div class="content-meta">
       <time itemprop="datePublished" class="content-meta__date" datetime="{{ page.date | date: "%Y-%m-%d, " }}">{{ page.date | date: "%B %-d, %Y" }}</time>
 
-    {% if page.author %}
+      {% if page.author %}
         <div class="content-meta__author" itemprop="author">
           By {{ site.data.authors[page.author].name }}
         </div>
-      </div>
-    {% endif %}
+      {% endif %}
+    </div>
   </div>
 
   <div class="copy copy--chapter">

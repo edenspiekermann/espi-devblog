@@ -24,4 +24,7 @@
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
   <meta name="twitter:image" content="{{ '/assets/images/espi-dev-blog-logo--twitter-card.jpg' | prepend: site.baseurl | prepend: site.url }}" />
+
+  {% include webfonts.html %}
+
 </head>

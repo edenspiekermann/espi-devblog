@@ -146,7 +146,6 @@ To allow this again we had to hack MJML a bit, since we weren't able to find any
 {% highlight erb %}
 <mjml>
   <mj-head>
-    <mj-title>MyWings - Red Bull</mj-title>
     <!-- mj-font gets converted into @import -->
     <mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald" />
     <mj-attributes>

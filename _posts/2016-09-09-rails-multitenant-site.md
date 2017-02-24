@@ -46,7 +46,7 @@ Rather than going into detail on the setup instructions, there's an excellent sc
 
 ### Elevators
 
-The apartment gem has the concept of 'Elevators' to switch between tenants. Elevator can be used to to switch the tenant based on the request coming in. Out of the box, requests can be matched by subdomain or host, but you can easily build your own Elevator to switch based on some custom attributes like headers or query params.
+The apartment gem has the concept of 'Elevators' to switch between tenants. Elevator can be used to switch the tenant based on the request coming in. Out of the box, requests can be matched by subdomain or host, but you can easily build your own Elevator to switch based on some custom attributes like headers or query params.
 
 Since we have different sites on different domains, we match on hostname, using the `HostHash` elevator. However, by default, this elevator throws an exception if it doesn't find a match. For example, if a user requests `https://foo.somedomain.com` instead of `http://www.somedomain.com`. To handle this a bit better we created a custom Elevator that renders a static 404 page:
 
@@ -158,7 +158,7 @@ end
 
 ## How it all went
 
-Overall we were extremely happy with the finished product - and more importantly, our customers are too. We have two separate sites running off he same web application, sharing the entire stack, nearly cutting the costs and maintenance in half.
+Overall we were extremely happy with the finished product - and more importantly, our customers are too. We have two separate sites running off the same web application, sharing the entire stack, nearly cutting the costs and maintenance in half.
 
 It took a bit of work ensuring everything was using the split up correctly such as namespacing the cache store, running the background jobs in the correct context, but it was well worth it.
 

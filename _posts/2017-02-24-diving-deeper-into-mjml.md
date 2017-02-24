@@ -87,7 +87,7 @@ Within the `mj-attributes` tag you can now define global stylings with `mj-all`;
 </mjml>
 {% endhighlight %}
 
-Another way to apply styling is to use `mj-style` and write plain CSS in it. You can then use `mj-raw` to write plain html and apply CSS class: 
+Another way to apply styling is to use `mj-style` and write plain CSS in it. You can then use `mj-raw` to write plain html and apply the CSS class: 
 
 {% highlight erb %}
 <!--  ./app/views/layouts/mjml_email.mjml -->
@@ -146,7 +146,6 @@ To allow this again we had to hack MJML a bit, since we weren't able to find any
 {% highlight erb %}
 <mjml>
   <mj-head>
-    <mj-title>MyWings - Red Bull</mj-title>
     <!-- mj-font gets converted into @import -->
     <mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald" />
     <mj-attributes>

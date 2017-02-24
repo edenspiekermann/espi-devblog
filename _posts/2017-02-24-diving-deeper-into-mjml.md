@@ -21,7 +21,7 @@ If you have different kinds of emails in your project, you might want to extract
 </mjml>
 {% endhighlight %}
 
-Now you add this layout to your mailer class:
+Now you can add this layout to your mailer class:
 
 {% highlight ruby %}
 # ./app/mailers/user_mailer.rb
@@ -49,7 +49,7 @@ All you have to do now is to remove the shared markups from your partial:
 </mj-section>
 {% endhighlight %}
 
-Pay attention to the changes of the file formats (when and where to use `.mjml` or `.mjml.erb`), it otherwise won't work! 
+Pay attention to the different file formats (when and where to use `.mjml` or `.mjml.erb`), otherwise it won't work! 
 
 ## Style Your MJML Templates
 
@@ -87,7 +87,7 @@ Within the `mj-attributes` tag you can now define global stylings with `mj-all`;
 </mjml>
 {% endhighlight %}
 
-Another way to apply styling is to use `mj-style` and write plain css in it. You can then use `mj-raw` to write plain html and use your css class: 
+Another way to apply styling is to use `mj-style` and write plain css in it. You can then use `mj-raw` to write plain html and use your CSS class: 
 
 {% highlight erb %}
 <!--  ./app/views/layouts/mjml_email.mjml -->
@@ -183,7 +183,7 @@ To allow this again we had to hack MJML a bit, since we weren't able to find any
 
 We are still very happy with MJML and are trying to integrate it into more and more of our projects. 
 
-The version 3 upgrade helps a lot in terms of DRY up the code and to integrate standard styling elements. But when the design becomes more complex, we did reach some of the limits of MJML. But the [lively discussions and issue requests online](https://github.com/mjmlio/mjml) promise that new features are soon to come. 
+The version 3 upgrade helps a lot in terms of DRY up the code and to integrate standard styling elements. But when the design becomes more complex, we did reach some of the limits of MJML. But the [lively discussions and issue requests online](https://github.com/mjmlio/mjml/issues) promise that new features are soon to come. 
 
 We've been testing our emails with [Litmus](https://litmus.com/), a service which allows us to see how our emails get rendered on different devices with different email clients. Since the switch to MJML we've more or less stopped experiencing broken stylings or missing elements. 🤘
 

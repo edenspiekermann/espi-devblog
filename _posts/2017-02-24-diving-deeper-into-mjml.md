@@ -87,7 +87,7 @@ Within the `mj-attributes` tag you can now define global stylings with `mj-all`;
 </mjml>
 {% endhighlight %}
 
-Another way to apply styling is to use `mj-style` and write plain css in it. You can then use `mj-raw` to write plain html and use your CSS class: 
+Another way to apply styling is to use `mj-style` and write plain CSS in it. You can then use `mj-raw` to write plain html and apply CSS class: 
 
 {% highlight erb %}
 <!--  ./app/views/layouts/mjml_email.mjml -->
@@ -150,7 +150,7 @@ To allow this again we had to hack MJML a bit, since we weren't able to find any
     <!-- mj-font gets converted into @import -->
     <mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald" />
     <mj-attributes>
-      <!-- This sets the global font of template to FSBlakeLight and adds some fallbacks. -->
+      <!-- This sets the global font of the template to FSBlakeLight and adds fallbacks. -->
       <mj-all font-family="FSBlakeLight, Oswald, Arial"/>
     </mj-attributes>
   </mj-head>
@@ -187,4 +187,4 @@ The version 3 upgrade helps a lot in terms of DRY up the code and to integrate s
 
 We've been testing our emails with [Litmus](https://litmus.com/), a service which allows us to see how our emails get rendered on different devices with different email clients. Since the switch to MJML we've more or less stopped experiencing broken stylings or missing elements. 🤘
 
-PS.: the [official list of MJML packages](https://github.com/mjmlio/mjml/tree/master/packages) has been a great source of help. 
+PS.: the [official list of MJML packages](https://github.com/mjmlio/mjml/tree/master/packages) also has been a great source of help. 

@@ -2,23 +2,19 @@
 layout: default
 ---
 
+<header class="edna-page-header">
+  <div class="edna-page-header__text edna-page-header__text--medium">
+    <h1 class="edna-page-header__title" itemprop="name">
+      {{ page.title }}
+    </h1>
+  </div>
+  {% if page.mainImage %}
+  <div class="edna-page-header__image-wrapper">
+    <img src="{{ page.mainImage }}" alt="{{ page.mainImageAlt }}" class="edna-page-header__image">
+  </div>
+  {% endif %}
+</header>
 
-{% if page.mainImage %}
-  <header class="header-pull">
-    <div class="header-pull__text">
-      <h1 class="header-pull__title" itemprop="name">
-        {{ page.title }}
-      </h1>
-    </div>
-    <div class="header-pull__image-wrapper">
-      <img src="{{ page.mainImage }}" alt="{{ page.mainImageAlt }}" class="header-pull__image">
-    </div>
-  </header>
-{% else %}
-  <header class="header-simple header-simple--medium">
-      <h1 class="header-simple__title" itemprop="name">{{ page.title }}</h1>
-  </header>
-{% endif %}
 
 <div class="content-body">
   <div class="content-body__meta">

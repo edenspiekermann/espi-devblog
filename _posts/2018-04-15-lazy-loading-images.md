@@ -134,7 +134,7 @@ function lazyLoadImage (observedImage) {
 {% endhighlight %}
 
 ### Polyfill
-As you can see [here](### Lazy loading images), the browser support is quite good, but not yet good enought for us. If you also want to improve the browser support, then follow the instrucion on [this npm module](https://github.com/w3c/IntersectionObserver/tree/master/polyfill). If you are still unsure, you can wrap the start of our observer in an if-condition to check if the IntersectionObserver is supported:
+As you can see [here](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), the browser support is quite good, but not yet good enought for us. If you also want to improve the browser support, then follow the instrucion on [this npm module](https://github.com/w3c/IntersectionObserver/tree/master/polyfill). If you are still unsure, you can wrap the start of our observer in an if-condition to check if the IntersectionObserver is supported:
 
 {% highlight JavaScript %}
   if('IntersectionObserver' in window) {

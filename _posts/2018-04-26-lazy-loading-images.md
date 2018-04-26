@@ -76,9 +76,8 @@ Make sure you apply some styling so that you need to scroll on the page and you 
 }
 {% endhighlight %}
 
-Let’s get to JavaScript part. There is a very nice little helper called `Intersection Observer` which was announced on the 14 September’17 by Google. They describe it as follows:
-> "This specification describes an API that can be used to understand the visibility and position of DOM elements ("targets") relative to a containing element or to the top-level viewport ("root". > The position is delivered asynchronously and is useful for understanding the visibility of elements and implementing pre-loading and deferred loading of DOM content.” 
-[source](https://www.w3.org/TR/intersection-observer/)
+Let’s get to JavaScript part. There is a very nice little helper called `Intersection Observer` which was announced on the 14 September’17 by Google. [W3C](https://www.w3.org/TR/intersection-observer/) describes it as follows:
+> This specification describes an API that can be used to understand the visibility and position of DOM elements ("targets") relative to a containing element or to the top-level viewport ("root". The position is delivered asynchronously and is useful for understanding the visibility of elements and implementing pre-loading and deferred loading of DOM content.
 
 **This is just perfect for lazy loading images!**
 

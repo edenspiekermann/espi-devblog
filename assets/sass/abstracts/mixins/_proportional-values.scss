@@ -1,0 +1,43 @@
+$full-desktop-width: 1440;
+$column-width: 72px;
+$gutter-width: 30px;
+
+@function columns($count) {
+  @return $column-width * $count;
+}
+
+@function gutters($count) {
+  @return $gutter-width * $count;
+}
+
+@function get-vw($target) {
+  $vw-context: ($full-desktop-width * 0.01) * 1px;
+
+  @return ($target / $vw-context) * 1vw;
+}
+
+@mixin proportional($property, $px-value) {
+  @include media('>small') {
+    #{$property}: get-vw($px-value);
+  }
+
+  @include media('>=max') {
+    #{$property}: $px-value;
+  }
+}
+
+@mixin border-left-width($px-value) {
+  @include proportional('border-left-width', $px-value);
+}
+
+@mixin border-right-width($px-value) {
+  @include proportional('border-right-width', $px-value);
+}
+
+@mixin padding-bottom($px-value) {
+  @include proportional('padding-bottom', $px-value);
+}
+
+@mixin padding-top($px-value) {
+  @include proportional('padding-top', $px-value);
+}

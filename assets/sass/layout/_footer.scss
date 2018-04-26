@@ -10,3 +10,142 @@
 .footer__imprint-and-stuff:first-child {
   border-top: 0;
 }
+
+$footer-bp-wrap: 900px;
+
+.footer {
+  margin-top: 150px;
+}
+
+.footer__company-profile-link {
+  @include link-styles;
+  display: inline-block;
+  margin: 0.25em 0.5em;
+}
+
+.footer__imprint-and-stuff {
+  @include clearfix;
+  @include padding-top(columns(1));
+  @include padding-bottom(150px);
+  border-top: 1px solid $very-dark-grey;
+  display: flex;
+  flex-direction: column;
+  margin: 50px -20px 25px;
+  padding: 20px;
+
+  @include media('>small') {
+    display: block;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.footer__logo {
+  margin-top: 1em;
+  order: 1;
+
+  @include media('>small') {
+    float: left;
+    margin-top: 0;
+    width: 50%;
+  }
+
+  svg {
+    fill: $very-dark-grey;
+    vertical-align: middle;
+  }
+}
+
+.footer__links {
+  font-size: 0.75em;
+  margin-top: 2em;
+  order: 2;
+
+  @include media('>small') {
+    float: right;
+    margin-top: 1.5em;
+    text-align: right;
+    width: 50%;
+  }
+}
+
+.footer__offices {
+  color: $mid-grey;
+  font-size: 0.75em;
+  margin-top: 2.666em;
+  order: 3;
+
+  @include media('>small') {
+    float: left;
+    margin-top: 1.5em;
+    width: 50%;
+  }
+}
+
+.footer__social {
+  float: right;
+  margin-top: 2em;
+  order: 4;
+
+  @include media('>small') {
+    float: right;
+    margin-top: 0;
+    text-align: right;
+    width: 50%;
+  }
+}
+
+.footer__copyright {
+  color: $mid-grey;
+  font-size: 0.75em;
+  font-weight: 400;
+  margin-top: 1em;
+  order: 5;
+
+  @include media('>small') {
+    float: right;
+    margin-top: 1.5em;
+    text-align: right;
+    width: 100%;
+  }
+}
+
+.footer__link,
+.footer__office {
+  color: $very-dark-grey;
+  display: block;
+  font-weight: 400;
+  line-height: 2;
+  text-decoration: none;
+  transition: color 250ms;
+
+  @include media('>small') {
+    display: inline-block;
+    line-height: 1;
+  }
+
+  &:hover,
+  &:active {
+    color: $espi-red;
+  }
+}
+
+.footer__office {
+  color: $very-dark-grey;
+
+  @include media('>small') {
+    margin-left: 1em;
+  }
+
+  &:hover,
+  &:active {
+    color: $espi-red;
+  }
+}
+
+.footer__link + .footer__link {
+  @include media('>small') {
+    margin-left: 1em;
+  }
+}

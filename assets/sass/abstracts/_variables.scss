@@ -1,6 +1,18 @@
 $spacing-unit: 30px;
 
 /**
- * Color values at https://www.edenspiekermann.com/styleguide/index.html#colors
- */
+* Color values at https://www.edenspiekermann.com/styleguide/index.html#colors
+*/
 $grey: #999;
+$mid-grey: #999;
+$dark-grey: #6f7476;
+$very-dark-grey: #2c3032;
+$espi-red: #fb263b;
+
+$breakpoints: (
+  'small': 376px,
+  'medium': 800px,
+  'large': 1024px,
+  'xlarge': 1200px,
+  'max': 1440px,
+);

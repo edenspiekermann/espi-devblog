@@ -7,8 +7,12 @@
   'https://www.edenspiekermann.com/assets/scss/all.css',
 
   'abstracts/variables',
+  'abstracts/mixins/link-styles',
+  'abstracts/mixins/clearfix',
+  'abstracts/mixins/proportional-values',
 
   'vendor/syntax-highlighting',
+  'vendor/includemedia',
 
   'layout/header',
   'layout/footer',

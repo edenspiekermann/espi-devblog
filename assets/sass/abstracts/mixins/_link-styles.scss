@@ -1,0 +1,17 @@
+/// Standard link styles, for inline use.
+/// @group typography
+/// @param {Bool} $secondary [false] - Switches the color scheme
+@mixin link-styles($secondary: false) {
+  color: if($secondary, $dark-grey, $espi-red);
+  transition: all 250ms;
+
+  &:visited {
+    color: if($secondary, $mid-grey, $dark-grey);
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: if($secondary, $espi-red, inherit);
+  }
+}

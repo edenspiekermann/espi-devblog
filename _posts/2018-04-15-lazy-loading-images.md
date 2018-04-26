@@ -2,24 +2,22 @@
 title: 'Improve pagespeed: Lazy Loading Images'
 author: dimitri-steinel
 layout: post
-mainImage: ""
-mainImageAlt: ""
+mainImage: "https://res.cloudinary.com/dsteinel/image/upload/v1524733864/Espi/blog/lazy%20loading%20images/lazy-loading_2.gif"
+mainImageAlt: "Aircraft flies really fast"
 --- 
 
 Don't want to read it all? [Here’s the code](#snippet)
 
-### First meaningful paint
-
-Have you heard of first meaningful paint? No? You should! The first meaningful paint is a very important parameter of your website. The longer a page needs to load the more likely as user is to lose interest and leave your website. So there is a very close connection between page speed and bounce rate.
-
-So what we want to achieve is to give the user a visible result as early as possible. There are many things you can do for speeding up the first meaningful paint. People talk about critical CSS, tree-shaking JavaScript and brotli compression because gzip is not compressing it enough. They talk about avoiding the use of libraries and help you to optimize your code to make it as small as possible. And they are right. All those things are great improvements to page speed, and a good page speed means more users will enjoy you website. But before we dive deeper into these topics, we start with optimizing images. There is nothing else which will improve your pagespeed more with that little effort.
+### First contentful paint
+Have you heard of first contentful paint? No? You should! The first contentful paint (or first meaningful paint) is a very important parameter of your website. The longer a page needs to load the more likely as user is to lose interest and leave your website. So there is a very close connection between pagespeed and bounce rate. Pagespeed means the time your website needs to load. A very nice ressource to test this is [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/). This is a tool by google which meassures the First Contentful Paint (FCP) and the DOM Content Loaded (DCL). 
+So what we want to achieve is to give the user a visible result as early as possible. There are many things you can do for speeding up the first contentful paint. People talk about critical CSS, tree-shaking JavaScript and brotli compression because gzip is not compressing it enough. They talk about avoiding the use of libraries and help you to optimize your code to make it as small as possible. And they are right. All those things are great improvements to pagespeed, and a good pagespeed means more users will enjoy you website. But before we dive deeper into these topics, we start with optimizing images. There is nothing else which will improve your pagespeed more with that little effort.
 
 ### Optimizing images
 Images should only be loaded in the size the users really need, meaning that you don’t need to load an image with the resolution of 3000x2000 when you only need to show it in a teaser size of 500x333. You can do the math how many data ressources you will save by just resizing the image and download it in only the size you really need it.
 <br/>
 <br/>
 After resizing the image the next important step is to minify the image with an image compressor. We use [OptiImage](https://getoptimage.com/) or [ImageOptim](https://imageoptim.com/mac) for that. Take care that you do not minify too much. There is a chance that you will make the image look not nice anymore (blurry/unsharp edges or awful color gradients). By optimizing the images with those tools instead of photoshop or something similar, you can save a lot of bytes. Well done! But now we download and render all images on our page even though we do not see them.
-![Image Optim](https://res.cloudinary.com/dsteinel/image/upload/v1524256663/imageoptim.png)
+![Image Optim](http://res.cloudinary.com/dsteinel/image/upload/c_scale,w_512/v1524734138/Espi/blog/lazy%20loading%20images/imageoptim.png)
 
 
 ### Lazy loading images
@@ -205,4 +203,5 @@ Here is a solution with a `noscript` tag. The `noscript` tag will only render wh
 
 <div id="snippet"></div>
 
-[Codepen Example](https://codepen.io/dSteinel/pen/mxYZdp).
+### Full Code Example
+Here is the full code example on [Codepen](https://codepen.io/dSteinel/pen/mxYZdp)

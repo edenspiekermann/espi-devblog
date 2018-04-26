@@ -34,42 +34,10 @@ $gutter-width: 30px;
   @include proportional('border-right-width', $px-value);
 }
 
-@mixin margin-bottom($px-value) {
-  @include proportional('margin-bottom', $px-value);
-}
-
-@mixin margin-left($px-value) {
-  @include proportional('margin-left', $px-value);
-}
-
-@mixin margin-right($px-value) {
-  @include proportional('margin-right', $px-value);
-}
-
-@mixin margin-top($px-value) {
-  @include proportional('margin-top', $px-value);
-}
-
 @mixin padding-bottom($px-value) {
   @include proportional('padding-bottom', $px-value);
 }
 
-@mixin padding-left($px-value) {
-  @include proportional('padding-left', $px-value);
-}
-
-@mixin padding-right($px-value) {
-  @include proportional('padding-right', $px-value);
-}
-
 @mixin padding-top($px-value) {
   @include proportional('padding-top', $px-value);
-}
-
-@mixin height($px-value) {
-  @include proportional('height', $px-value);
-}
-
-@mixin width($px-value) {
-  @include proportional('width', $px-value);
 }

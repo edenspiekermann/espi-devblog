@@ -58,7 +58,6 @@ $footer-bp-wrap: 900px;
 }
 
 .footer__links {
-  font-size: 0.75em;
   margin-top: 2em;
   order: 2;
 
@@ -72,7 +71,6 @@ $footer-bp-wrap: 900px;
 
 .footer__offices {
   color: $mid-grey;
-  font-size: 0.75em;
   margin-top: 2.666em;
   order: 3;
 
@@ -98,7 +96,6 @@ $footer-bp-wrap: 900px;
 
 .footer__copyright {
   color: $mid-grey;
-  font-size: 0.75em;
   font-weight: 400;
   margin-top: 1em;
   order: 5;
@@ -148,4 +145,8 @@ $footer-bp-wrap: 900px;
   @include media('>small') {
     margin-left: 1em;
   }
+}
+
+.footer__content {
+  font-size: 20px; // make it fix, otherwise we have to change the body font
 }

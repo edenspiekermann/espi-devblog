@@ -49,28 +49,12 @@ Remove the Github connection and connect the folder with your own Git repository
 {% endhighlight %}
 
 ### Use it
-#### a) Locally
-* Create a `.env` file in the root of your project
-* Copy over all dummy content from `.env.example`. These are all the details Craft needs for installation.
-* Install all dependencies 
-{% highlight bash %}$ composer install{% endhighlight %}
-* In Mamp, make `web` the root path you project
-![MAMP](https://res.cloudinary.com/dsteinel/image/upload/v1532511859/Screen_Shot_2018-07-25_at_11.43.20.png){:class="img--little-margin"}
-* Go to `localhost:8888/admin/install`
-* Follow the Craft install guide
-* With your right hand, make a fist (not a tight one) 
-* Smoothly extend both your pinky and your thumb
-* Lightly shake your hand (too fast makes you like a tourist, and too slow make you look stupid)
-* Softly but confident vocalise the word "Shaka"
-* Now let's start coding 🎈
-
-#### b) Optional: Deploy to Heroku
-This step is optional. If you want to deploy the project to Heroku then read on. If you only want to work locally, skip the section and jump to [Start working with the project](#start-working-with-the-project).
+#### Deploy to Heroku
 To make your repository work on Heroku, we first have to update the reference URL with your freshly created repository.
-Heroku reads all the deploy details from the [app.json](https://devcenter.heroku.com/articles/app-json-schema) file. So we need to go there and replace the `"repository"` URL with your repository URL. 
+Heroku reads all the deploy details from the [app.json](https://devcenter.heroku.com/articles/app-json-schema) file. So we need to  replace the `"repository"` URL with your repository `YOUR-REMOTE-PROJECT-URL`. 
 
 Push the changed `app.json` to your GitHub repository and adjust the following link with your repository and branch:
-`https://heroku.com/deploy?template=https://github.com/YOU_REPOSITORY/tree/YOUR_BRANCH_NAME`
+`https://heroku.com/deploy?template=https://github.com/YOUR-REMOTE-PROJECT-URL/tree/YOUR-BRANCH-NAME`
 
 For example: `https://heroku.com/deploy?template=https://github.com/dsteinel/craft-heroku-test-project/tree/master`
 
@@ -89,6 +73,17 @@ Depending on the traffic, you also may have to upgrade the Heroku servers to a p
 After the deployment process is successful, go to your new created website and add `/admin/install` to the URL. Craft will help you to make the setup complete.
 ![Craft CMS install screen](https://res.cloudinary.com/dsteinel/image/upload/v1532511530/Screen_Shot_2018-07-25_at_11.36.45.png)
 
+#### Use it locally
+To complete your development environment, you should make the project running on your local machine as well:
+* Create a `.env` file in the root of your project
+* Copy over all dummy content from `.env.example`. These are all the details Craft needs for installation.
+* Install all dependencies 
+{% highlight bash %}$ composer install{% endhighlight %}
+* In Mamp, make `web` the root path you project
+![MAMP](https://res.cloudinary.com/dsteinel/image/upload/v1532511859/Screen_Shot_2018-07-25_at_11.43.20.png){:class="img--little-margin"}
+* Go to `localhost:8888/admin/install`
+* Follow the Craft install guide
+
 ### Start working with the project
 * Use the recommended node version with `nvm use`
 * Install all dependencies with `yarn install`
@@ -96,3 +91,44 @@ After the deployment process is successful, go to your new created website and a
 * Run `yarn watch` from the Terminal. This will start a web-server and proxy port :8888 (MAMP) to :3000 (webpack)
 * Go to `localhost:3000` and enjoy hot reloading
 * If you want to make the bundle production ready, do `yarn build`
+
+## Plugins which come with the project
+### Cloudinary
+[Craft3 Cloudinary](https://github.com/timkelty/craft3-cloudinary) is an integration of the cloud-based image management [cloudinary](https://cloudinary.com/) to your Craft3 project. 
+
+### Set up Cloudinary in Craft
+1. Go to your `Admin -> Settings -> Assets`
+2. Create a new Volume
+3. Type in a name you like (f.e. `Cloud Images`)
+4. Enable `Assets in this volume have public URLs`
+5. You can decide on your Base URL (f.e. `@web` is the root of your website but you can also go with `@web/images` if you want to have `http://yourwebsite.com/images/` as your public image path)
+6. Volume Type must be `Cloudinary`
+7. Now fill in the Cloudinary credentials
+8. Go to the Assets and upload the first image
+
+### Blitz
+The [Blitz Plugin](https://github.com/putyourlightson/craft-blitz) is only for production. It is a intelligent static file caching for creating lightning-fast sites. If you enable this, your site will be very fast, but you will not see the debugger toolbar. So make sure to disable it in development from the admin panel.
+
+### Redactor
+Most projects do need a wysiwyg editor. [Redactor](https://imperavi.com/redactor/) claims to be the most advanced and human-friendly one. Well ... it is a very nice and customisable editor.
+[GitHub](https://github.com/craftcms/redactor)
+
+### Gatekeeper
+If the page is still under construction, it is a good idea to password protect it. Therefore we use [Gatekeeper](https://github.com/tomdiggle/craft-gatekeeper).
+
+
+### Important notice
+#### Database
+If you want to develop locally, I can highly recommend you to use a local database, otherwise the website will be quite slow.
+To change the database, head over to you `.env` variable, change the value of `JAWSDB_MARIA_URL` and restart the server.
+
+
+#### Procfile
+Craft has its main folder not in the root directory (in this project it is the `web` folder), so we need to do some adjustments on the Heroku web server settings. Heroku provides optional configurations in the [Procfile](https://devcenter.heroku.com/articles/deploying-php#the-procfile). 
+In this project we need to start an Nginx as a web server and make `web` the root directory of the server.
+
+I would recommend to not change the name of the `web` folder. 
+If you feel like changing it, please read the [Docs](https://docs.craftcms.com/v3/directory-structure.html#web) and don't forget to change the folder path after the boot-script in the `Procfile`.
+
+#### Database
+This project is using MariaDB instead of MySQL. MariaDB is a complete drop-in-replacement for MySQL. If you need to migrate some datas, you should not have problems here. If you do, you can change the database connection at any time in the Heroku interface by replacing the `JAWSDB_MARIA_URL` URL with your database URL (`settings --> config vars`).

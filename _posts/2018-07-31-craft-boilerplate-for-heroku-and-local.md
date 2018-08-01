@@ -1,5 +1,5 @@
 ---
-title: 'Craft 3 Boilerplate: Use it locally and on Heroku'
+title: 'Craft 3 Heroku Boilerplate'
 author: dimitri-steinel
 layout: post
 mainImage: ""
@@ -14,7 +14,7 @@ With [Craft 3](https://craftcms.com/news/craft-3), which was released in Aprilâ€
 
 Here is a guide on how to set up a Craft 3 project on Heroku.
 
-### Donâ€™t want to read or the quick and dirty start
+### The quick and dirty start
 This button has been made for those who just want to have a fresh Craft 3 instance on Heroku. Click the button and directly deploy our public [boilerplate repository](https://github.com/edenspiekermann/craft-heroku-boilerplate) to a new instance on your Heroku account. 
 
 Go ahead and try:
@@ -24,8 +24,10 @@ After the install process, visit the URL of your app and add `/admin/install` to
 `https://HERE-GOES-YOUR-URL.herokuapp.com/admin/install`
 
 Fill out all the details from the guide and you are good to go!
+![Heroku create new app screen](https://res.cloudinary.com/dsteinel/image/upload/v1533126210/Espi/blog/heroku-craft/2018-08-01_14.21.56.gif){:class="img--little-margin"}
 
-## The slower but I know what I am doing start
+
+## Start from scratch
 ### Set up a new project
 First we need to clone our Boilerplate Repo into a local folder:
 {% highlight bash %}
@@ -69,9 +71,9 @@ If you have multiple Users, it is recommended, that you upgrade at least the dat
 
 Depending on the traffic, you also may have to upgrade the Heroku servers to a paid plan.
 
-##### Heroku Post install
+#### Heroku Post install
 After the deployment process is successful, go to your new created website and add `/admin/install` to the URL. Craft will help you to make the setup complete.
-![Craft CMS install screen](https://res.cloudinary.com/dsteinel/image/upload/v1532511530/Screen_Shot_2018-07-25_at_11.36.45.png)
+![Craft CMS install screen](https://res.cloudinary.com/dsteinel/image/upload/v1532511530/Screen_Shot_2018-07-25_at_11.36.45.png){:class="img--little-margin"}
 
 #### Use it locally
 To complete your development environment, you should make the project running on your local machine as well:

@@ -10,7 +10,7 @@ mainImageAlt: ""
 To make sure we can seamlessly work in teams, we have a specific requirements for our hosting environment.
 Currently, our hosting solution of choice is [Netlify](https://www.netlify.com/) and [Heroku](https://www.heroku.com/). 
 Netlify is mostly for our static websites. Heroku is for almost all other projects.
-With [Craft 3](https://craftcms.com/news/craft-3), which was released in April’18, it is already much easier to install the CMS as [composer package](https://packagist.org/packages/craftcms/cms) and host it. But there were still some things we need to take care of in order to host it on Heroku.
+With [Craft 3](https://craftcms.com/news/craft-3), which was released in April’18, it's already much easier to install the CMS as a [composer package](https://packagist.org/packages/craftcms/cms) and host it. But there were still some things we needed to take care of in order to host it on Heroku.
 
 Here is a guide on how to set up a Craft 3 project on Heroku.
 
@@ -21,7 +21,7 @@ Go ahead and try:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg){:class="img--little-margin"}](https://heroku.com/deploy?template=https://github.com/dsteinel/craft-heroku-test-project/tree/master)
 
 After the install process, visit the URL of your app and add `/admin/install` to it. For example: 
-`https://HERE-GOES-YOUR-URL.herokuapp.com/admin/install`
+`https://YOUR-URL-GOES-HERE.herokuapp.com/admin/install`
 
 Fill out all the details from the guide and you are good to go!
 ![Heroku create new app screen](https://res.cloudinary.com/dsteinel/image/upload/v1533126210/Espi/blog/heroku-craft/2018-08-01_14.21.56.gif){:class="img--little-margin"}
@@ -122,7 +122,7 @@ If the page is still under construction, it is a good idea to password protect i
 ### Important notice
 #### Database
 If you want to develop locally, I can highly recommend you to use a local database, otherwise the website will be quite slow.
-To change the database, head over to you `.env` variable, change the value of `JAWSDB_MARIA_URL` and restart the server.
+To change the database, head over to your `.env` variable, change the value of `JAWSDB_MARIA_URL` and restart the server.
 
 
 #### Procfile

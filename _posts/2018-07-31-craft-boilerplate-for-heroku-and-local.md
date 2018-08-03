@@ -18,7 +18,7 @@ Here is a guide on how to set up a Craft 3 project on Heroku.
 This button has been made for those who just want to have a fresh Craft 3 instance on Heroku. Click the button and directly deploy our public [boilerplate repository](https://github.com/edenspiekermann/craft-heroku-boilerplate) to a new instance on your Heroku account. 
 
 Go ahead and try:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg){:class="img--little-margin"}](https://heroku.com/deploy?template=https://github.com/dsteinel/craft-heroku-test-project/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg){:class="img--little-margin"}](https://heroku.com/deploy?template=https://github.com/dsteinel/craft-heroku-test-project/tree/master){:target="_blank"}
 
 After the install process, visit the URL of your app and add `/admin/install` to it. For example: 
 `https://YOUR-URL-GOES-HERE.herokuapp.com/admin/install`
@@ -39,13 +39,17 @@ Rename the folder and make it your project:
   $ mv craft-heroku-boilerplate NEW-PROJECT-NAME
 {% endhighlight %}
 
-Remove the Github connection and connect the folder with your own Git repository. Go and create a new and empty Git repository. There must not be any `.git` or `README.md` file. After it is created, go with:
+Now we need to remove the Github connection and connect the folder with your own Git repository. 
 {% highlight bash %}
   $ cd craft-heroku-boilerplate
   $ rm -rf .git
   $ git init
   $ git add .
   $ git commit -m '🎈 project start 🎈'
+{% endhighlight %}
+
+Go and create a new and empty Git repository with your account. There must not be any `.git` or `README.md` file. After it is created, go with:
+{% highlight bash %}
   $ git remote add origin YOUR-REMOTE-PROJECT-URL
   $ git push --set-upstream origin master
 {% endhighlight %}

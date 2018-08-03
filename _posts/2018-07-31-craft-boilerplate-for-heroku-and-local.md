@@ -90,6 +90,15 @@ To complete your development environment, you should make the project running on
 * Go to `localhost:8888/admin/install`
 * Follow the Craft install guide
 
+##### Having troubles with PHP extensions?
+If you have any issues with missing php extensions during `composer install` command, you have to make sure the extension `ext-mbstring` and `ext-imagick` are installed. For OSX, it is best to install `imagemagick` and `php` (must be >7) with [homebrew](https://brew.sh/index_de) and `imagick` with pecl (PHP extension manager):
+{% highlight bash %}
+  $ brew install imagemagick
+  $ brew install pkg-config
+  $ pecl install imagick
+{% endhighlight %}
+
+
 ### Start working with the project
 * Use the recommended node version with `nvm use`
 * Install all dependencies with `yarn install`
@@ -124,10 +133,10 @@ If the page is still under construction, it is a good idea to password protect i
 
 
 ### Important notice
+#### 
 #### Database
 If you want to develop locally, I can highly recommend you to use a local database, otherwise the website will be quite slow.
 To change the database, head over to your `.env` variable, change the value of `JAWSDB_MARIA_URL` and restart the server.
-
 
 #### Procfile
 Craft has its main folder not in the root directory (in this project it is the `web` folder), so we need to do some adjustments on the Heroku web server settings. Heroku provides optional configurations in the [Procfile](https://devcenter.heroku.com/articles/deploying-php#the-procfile). 

@@ -2,11 +2,11 @@
 title: 'Performance Profiling with CraftCMS'
 author: dimitri-steinel
 layout: post
-mainImage: ""
-mainImageAlt: ""
+mainImage: "http://res.cloudinary.com/dsteinel/image/upload/c_scale,w_1060/v1533903711/Espi/blog/performance%20profiling/bottleneck.jpg"
+mainImageAlt: "Illustration. A bottle gets cut open."
 --- 
 
-In one of our recent CraftCMS projects, we encountered a very slow page-speed. This project was for the swiss lifestyle magazine [Friday](https://www.edenspiekermann.com/projects/friday-magazine/). As we to implemented more and more articles on our testing plattform, we discovered that the database queries grew exponential 📈. The loading time went up to several seconds and we knew, that we have to takles this as soon as possible. 
+In one of our recent CraftCMS projects, we encountered a very slow page-speed. This project was for the swiss lifestyle magazine [Friday](https://www.edenspiekermann.com/projects/friday-magazine/). As we to implemented more and more articles on our testing platform, we discovered that the database queries grew exponential 📈. The loading time went up to several seconds and we knew, that we have to tackle this as soon as possible. 
 So we started to investigate our template code. Here is a quick guide of how to tackle performance issues with CraftCMS.
 
 ### Yii Debug Toolbar

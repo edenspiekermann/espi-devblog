@@ -15,6 +15,8 @@ First you need to enable the debugger toolbar. In Craft you can debug your templ
 > The [Yii Debug Toolbar](https://www.yiiframework.com/extension/yii-debug-toolbar) is a configurable set of panels that display various debug information about the current request/response and when clicked, displays more details about the panel's content.
 
 ### Enable Debugger Toolbar
+**11th August UPDATE: The awesome nystudio107 told me, that you don't have to be in devMode. So you can skip this part**
+
 To enable the debugger toolbar, you first need to enable `devMode` in your `config/general.php`.
 
 ```js
@@ -22,6 +24,7 @@ To enable the debugger toolbar, you first need to enable `devMode` in your `conf
     'devMode' => true,
   );
 ```
+
 
 <br>
 After that, go to your admin panel and click on the bottom left corner on the craft licence link. This will open up the licence overview. In order to enable the debugger toolbar, you need to have the full version of CraftCMS. There are 2 options:
@@ -192,3 +195,6 @@ Do not only check your page-speed with the Craft debugger. Also check the networ
 * [Google Pagespeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 * [Google Chrome Lighthouse plugin](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
 * [Pingdom Website Speed Test](https://tools.pingdom.com/)
+
+<br>
+If you want to know more details, make sure you check out: [Profiling your Website with Craft CMS 3’s Debug Toolbar](https://nystudio107.com/blog/profiling-your-website-with-craft-cms-3s-debug-toolbar)

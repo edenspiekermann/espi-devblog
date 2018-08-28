@@ -15,10 +15,10 @@ With [Craft 3](https://craftcms.com/news/craft-3), which was released in Aprilâ€
 Here is a guide on how to set up a Craft 3 project on Heroku.
 
 ### The quick and dirty start
-This button has been made for those who just want to have a fresh Craft 3 instance on Heroku. Click the button and directly deploy our public [boilerplate repository](https://github.com/edenspiekermann/craft-heroku-boilerplate) to a new instance on your Heroku account. 
+This button has been made for those who just want to have a fresh Craft 3 instance on Heroku. Click the button and directly deploy our public [boilerplate repository](https://github.com/edenspiekermann/craft3-heroku-starterkit) to a new instance on your Heroku account. 
 
 Go ahead and try:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg){:class="img--little-margin"}](https://heroku.com/deploy?template=https://github.com/dsteinel/craft-heroku-test-project/tree/master){:target="_blank"}
+[![Deploy](https://www.herokucdn.com/deploy/button.svg){:class="img--little-margin"}](https://heroku.com/deploy?template=https://github.com/edenspiekermann/craft3-heroku-starterkit/tree/master){:target="_blank"}
 
 After the install process, visit the URL of your app and add `/admin/install` to it. For example: 
 `https://YOUR-URL-GOES-HERE.herokuapp.com/admin/install`
@@ -35,7 +35,7 @@ First we need to clone our Boilerplate Repo into a local folder:
 {% endhighlight %}
 
 Rename the folder and make it your project:
-{% highlight bash %} 
+{% highlight bash %}
   $ mv craft-heroku-boilerplate NEW-PROJECT-NAME
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ Heroku reads all the deploy details from the [app.json](https://devcenter.heroku
 Push the changed `app.json` to your GitHub repository and adjust the following link with your repository and branch:
 `https://heroku.com/deploy?template=https://github.com/YOUR-REMOTE-PROJECT-URL/tree/YOUR-BRANCH-NAME`
 
-For example: `https://heroku.com/deploy?template=https://github.com/dsteinel/craft-heroku-test-project/tree/master`
+For example: `https://heroku.com/deploy?template=https://github.com/edenspiekermann/craft3-heroku-starterkit/tree/master`
 
 After you adjusted the link, visit it in your browser.
 You will see a Heroku page for creating a new instance.
@@ -133,7 +133,7 @@ If the page is still under construction, it is a good idea to password protect i
 
 
 ### Important notice
-#### 
+
 #### Database
 If you want to develop locally, I can highly recommend you to use a local database, otherwise the website will be quite slow.
 To change the database, head over to your `.env` variable, change the value of `JAWSDB_MARIA_URL` and restart the server.

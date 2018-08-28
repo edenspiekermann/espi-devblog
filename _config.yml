@@ -1,6 +1,6 @@
 # Site settings
 title: The ESPI Developer Blog
-email: e.schaefer@de.edenspiekermann.com
+email: d.steinel@de.edenspiekermann.com
 description: Rumblings from the devs at Edenspiekermann. Front-end, back-end, deep-end.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://dev.edenspiekermann.com" # the base hostname & protocol for your site

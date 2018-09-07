@@ -6,13 +6,12 @@ mainImage: "http://res.cloudinary.com/dsteinel/image/upload/c_scale,w_1012/v1536
 mainImageAlt: "Yes this is a rocket"
 --- 
 
-### First contentful paint
 To make sure we can seamlessly work in teams, we have a specific requirements for our hosting environment.
 Currently, our hosting solution of choice is [Netlify](https://www.netlify.com/) and [Heroku](https://www.heroku.com/). 
 Netlify is mostly for our static websites. Heroku is for almost all other projects.
 With [Craft 3](https://craftcms.com/news/craft-3), which was released in April’18, it's already much easier to install the CMS as a [composer package](https://packagist.org/packages/craftcms/cms) and host it. But there were still some things we needed to take care of in order to host it on Heroku.
 
-Here is a guide on how to set up a Craft 3 project on Heroku.
+This is a guide on how to set up a Craft 3 project on Heroku.
 
 ### The quick and dirty start
 This button has been made for those who just want to have a fresh Craft 3 instance on Heroku. Click the button and directly deploy our public [boilerplate repository](https://github.com/edenspiekermann/craft3-heroku-starterkit) to a new instance on your Heroku account. 

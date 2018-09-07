@@ -1,9 +1,9 @@
 ---
-title: 'Craft 3 Heroku Boilerplate'
+title: 'Craft 3 - Heroku Boilerplate'
 author: dimitri-steinel
 layout: post
-mainImage: ""
-mainImageAlt: ""
+mainImage: "http://res.cloudinary.com/dsteinel/image/upload/c_scale,w_1012/v1536323225/Espi/blog/heroku-craft/craft-heroku-quickstart.jpg"
+mainImageAlt: "Yes this is a rocket"
 --- 
 
 ### First contentful paint

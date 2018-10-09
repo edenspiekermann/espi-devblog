@@ -4,7 +4,10 @@
 
 .copy--chapter {
   max-width: 100%;
-  width: 610px;
+  @media screen and (min-width: 801px) {
+    width: 65%;
+    min-width: 610px;
+  }
 }
 
 .content-body__meta {
@@ -20,12 +23,12 @@
   }
 
   h3 {
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 801px) {
       font-size: 2em;
     }
     &:first-of-type {
       margin-top: 4.5rem;
-      @media screen and (min-width: 800px) {
+      @media screen and (min-width: 801px) {
         margin-top: 7rem;
       }
     }

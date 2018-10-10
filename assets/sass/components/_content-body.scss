@@ -34,3 +34,19 @@
     }
   }
 }
+
+code {
+  @media screen and (max-width: 600px) {
+    white-space: normal;
+  }
+}
+
+#further-reading {
+  margin-top: 3em;
+}
+
+td.blob-code {
+  @media screen and (max-width: 600px) {
+    display: initial;
+  }
+}

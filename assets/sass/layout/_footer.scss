@@ -14,7 +14,10 @@
 $footer-bp-wrap: 900px;
 
 .footer {
-  margin-top: 150px;
+  margin-top: 40px;
+  @media screen and (min-width: 801px) {
+    margin-top: 150px;
+  }
 }
 
 .footer__company-profile-link {

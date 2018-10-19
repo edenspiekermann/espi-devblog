@@ -41,6 +41,23 @@ code {
   }
 }
 
+.copy blockquote {
+  @media (min-width: 801px) {
+    position: relative;
+    margin-left: 12%;
+    font-size: 1.2em;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -40px;
+      height: 100%;
+      width: 5px;
+      background: $espi-red;
+    }
+  }
+}
+
 #further-reading {
   margin-top: 3em;
 }

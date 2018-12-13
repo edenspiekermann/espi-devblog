@@ -157,10 +157,11 @@ To allow this again we had to hack MJML a bit, since we weren't able to find any
   <mj-body>
     <mj-container>
       <mj-raw>
-        <!-- 
-          This is a bit of a hack! 
-          mj-raw only works within the mj-container tag. 
-        -->
+        <style>
+          <!-- 
+            This is a bit of a hack! 
+            mj-raw only works within the mj-container tag. 
+          -->
           @font-face {
             font-family: 'FSBlakeLight';
             src: url("<%= asset_path('blake_light/fs_blake_web-light.eot') %>");

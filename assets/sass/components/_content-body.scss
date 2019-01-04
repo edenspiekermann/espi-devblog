@@ -1,0 +1,35 @@
+.content-body {
+  width: 1100px;
+}
+
+.copy--chapter {
+  max-width: 100%;
+  width: 610px;
+}
+
+.content-body__meta {
+  right: 20px;
+  left: unset;
+}
+
+.copy p {
+  line-height: 1.8rem;
+}
+
+.copy--chapter {
+  & h1, & h2, & h3 {
+    margin-left: 0;
+  }
+
+  h3 {
+    @media screen and (min-width: 800px) {
+      font-size: 2em;
+    }
+    &:first-of-type {
+      margin-top: 4.5rem;
+      @media screen and (min-width: 800px) {
+        margin-top: 7rem;
+      }
+    }
+  }
+}

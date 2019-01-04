@@ -3,8 +3,8 @@
 }
 
 .copy--chapter {
-  max-width: 100%;
-  width: 610px;
+  width: 100%;
+  max-width: 750px;
 }
 
 .content-body__meta {
@@ -26,10 +26,7 @@
       font-size: 2em;
     }
     &:first-of-type {
-      margin-top: 4.5rem;
-      @media screen and (min-width: 800px) {
-        margin-top: 7rem;
-      }
+      margin-top: 0;
     }
   }
 }

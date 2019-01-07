@@ -28,7 +28,12 @@ Let's start with installing the plugin:
 <br />
 <br />
 Once it is installed, we need to create an endpoint. Go to your CraftCMS admin and head over to **settings —> CraftQL**.
-Enter the URI for your endpoint and generate a new token. Make sure you check the settings in the token you created. Here you can adjust the power of the token. Should this token be read-only or can you also mutate entries with your token? Since we creating a frontend application, we do not need any mutations here.
+Enter the URI for your endpoint or stíck with the default 'api'. Think of a name and generate a new token. 
+Make sure you open the settings of your token you just created. Here you can adjust the power of the token. Should this token be read-only or can you also mutate entries with your token?
+
+Remeber, your **api endpoint** will be your CraftCMS URL + URI name (default: api): https://your-craftcms-url.com/api
+
+Do not forget to update the API token settings if you add a new section. Otherwise the API does not know that there is a new section.
 
 ![Screenshot of CraftQL settings](https://res.cloudinary.com/dsteinel/image/upload/c_scale,w_1500/v1546602480/Espi/blog/craft%20to%20headless/espi-blog-craft-to-headless-craftql-settings.png)
 

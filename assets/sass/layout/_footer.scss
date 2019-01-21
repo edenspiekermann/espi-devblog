@@ -1,5 +1,5 @@
 .footer {
-  margin-top: ($spacing-unit * 2);
+  margin-top: ($spacing-unit * 4);
   font-size: 0.8em;
   color: #999;
 }
@@ -12,10 +12,6 @@
 }
 
 $footer-bp-wrap: 900px;
-
-.footer {
-  margin-top: 150px;
-}
 
 .footer__company-profile-link {
   @include link-styles;

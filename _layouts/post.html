@@ -3,16 +3,16 @@ layout: default
 ---
 
 <header class="edna-page-header">
-  <div class="edna-page-header__text edna-page-header__text--medium">
-    <h1 class="edna-page-header__title" itemprop="name">
-      {{ page.title }}
-    </h1>
-  </div>
   {% if page.mainImage %}
   <div class="edna-page-header__image-wrapper">
     <img src="{{ page.mainImage }}" alt="{{ page.mainImageAlt }}" class="edna-page-header__image">
   </div>
   {% endif %}
+  <div class="edna-page-header__text edna-page-header__text--medium">
+    <h1 class="edna-page-header__title" itemprop="name">
+      {{ page.title }}
+    </h1>
+  </div>
 </header>
 
 

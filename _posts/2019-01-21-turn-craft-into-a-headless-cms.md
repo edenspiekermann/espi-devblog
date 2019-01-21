@@ -67,19 +67,19 @@ Go to the file Gatsby configuration file (**gatsby-config.js**) and add the grap
 
 {% highlight js %}
 {
-resolve: `gatsby-source-graphql`,
-options: {
-url: `${apiUrl}`,
-typeName: "Craft",
-fieldName: "craft",
-headers: {
-Authorization: `bearer ${graphqlToken}`,
-},
-start_url: '/',
-background_color: '#663399',
-theme_color: '#663399',
-display: 'minimal-ui',
-}
+  resolve: `gatsby-source-graphql`,
+  options: {
+    url: `${apiUrl}`,
+    typeName: "Craft",
+    fieldName: "craft",
+    headers: {
+      Authorization: `bearer ${graphqlToken}`,
+    },
+    start_url: '/',
+    background_color: '#663399',
+    theme_color: '#663399',
+    display: 'minimal-ui',
+  }
 }
 {% endhighlight %}
 
@@ -100,30 +100,30 @@ const graphqlToken = process.env.GRAPHQL_TOKEN
 const apiUrl = process.env.API_URL
 
 module.exports = {
-siteMetadata: {
-title: `Edenspiekermann CraftQL test project`,
-description: `Let's make CraftCMS headless`,
-author: `@edenspiekermann`,
-},
-plugins: [
-`gatsby-transformer-sharp`,
-`gatsby-plugin-sharp`,
-{
-resolve: `gatsby-source-graphql`,
-options: {
-url: `${apiUrl}`,
-typeName: 'Craft',
-fieldName: 'craft',
-headers: {
-Authorization: `bearer ${graphqlToken}`,
-},
-start_url: '/',
-background_color: '#663399',
-theme_color: '#663399',
-display: 'minimal-ui',
-},
-},
-],
+  siteMetadata: {
+    title: `Edenspiekermann CraftQL test project`,
+    description: `Let's make CraftCMS headless`,
+    author: `@edenspiekermann`,
+  },
+  plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        url: `${apiUrl}`,
+        typeName: 'Craft',
+        fieldName: 'craft',
+        headers: {
+          Authorization: `bearer ${graphqlToken}`,
+        },
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+      },
+    },
+  ],
 }
 {% endhighlight %}
 
@@ -140,26 +140,24 @@ import { StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 
 const IndexPage = () => (
-<StaticQuery
-query={graphql`{ craft { home: entries(section: [home]) { ... on Craft_Home { id title slug } } } }`}
-render={({ craft }) => {
-const homepage = craft.home[0];
-const {
-id,
-title,
-slug,
-} = homepage;
-
-      return (
-        <Layout>
-          <h1>{title}</h1>
-          <p>Entry Slug: {slug}</p>
-          <p>Entry Id: {id}</p>
-        </Layout>
-      );
-    }}
-
-/>
+  <StaticQuery
+    query={graphql`{ craft { home: entries(section: [home]) { ... on Craft_Home { id title slug } } } }`}
+    render={({ craft }) => {
+      const homepage = craft.home[0];
+      const {
+      id,
+      title,
+      slug,
+      } = homepage;
+        return (
+          <Layout>
+            <h1>{title}</h1>
+            <p>Entry Slug: {slug}</p>
+            <p>Entry Id: {id}</p>
+          </Layout>
+        );
+      }}
+  />
 );
 
 export default IndexPage;

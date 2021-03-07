@@ -1,6 +1,6 @@
 ---
 title: "Introducing A11y Dialog"
-author: hugo-giraudel
+author: kitty-giraudel
 layout: post
 ---
 

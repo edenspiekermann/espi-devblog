@@ -1,6 +1,6 @@
 ---
 title: "Using MJML in Rails"
-author: hugo-giraudel
+author: kitty-giraudel
 layout: post
 --- 
 

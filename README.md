@@ -27,8 +27,8 @@ To display a small block of content about the author at the end of an article, w
 When publishing an article for you or one of your dev peers, make sure the author actually exists in this file. If it does not, add it. The key is the slugified name (later used in the YAML Front Matter of articles), and the value is an object with `name`, `description` and `image`. For the image, you can hotlink the one [from the website](http://www.edenspiekermann.com/people).
 
 ```yaml
-hugo-giraudel:
-  name: "Hugo Giraudel"
-  description: "Hugo Giraudel is a CSS goblin, Sass hacker, margin psycho working at Edenspiekermann (Berlin) as a front-end developer."
+kitty-giraudel:
+  name: "Kitty Giraudel"
+  description: "Kitty Giraudel is a non-binary accessibility & diversity advocate, frontend developer, author and real life cat."
   image: "http://app.resrc.it/s=w270,pd2/o=90/http://www.edenspiekermann.com/system/images/W1siZiIsIjIwMTUvMDQvMjcvMTIvMjQvNTIvMjMwL2h1Z29fZ2lyYXVkZWxfc3F1YXJlLmpwZWciXSxbInAiLCJ0aHVtYiIsIjUwMHg1MDAjIl1d/hugo_giraudel_square.jpeg"
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Introducing transync"
 layout: post
-author: hugo-giraudel
+author: kitty-giraudel
 ---
 
 Hey folks, another day, another open-source module at Edenspiekermann! Today, I’d like to talk about translation files. We tend to do a lot of multilingual websites here at the company.

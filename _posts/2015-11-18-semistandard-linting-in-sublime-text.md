@@ -1,6 +1,6 @@
 ---
 layout: post
-author: hugo-giraudel
+author: kitty-giraudel
 title: "Semistandard linting in Sublime Text"
 ---
 

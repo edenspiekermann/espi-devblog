@@ -1,7 +1,7 @@
-hugo-giraudel:
-  name: "Hugo Giraudel"
-  description: "Hugo Giraudel is a CSS goblin, Sass hacker, and serial writer who used to work at Edenspiekermann (Berlin) as a front-end developer."
-  image: "https://pbs.twimg.com/profile_images/763380328316694528/QI6mgUbU_400x400.jpg"
+kitty-giraudel:
+  name: "Kitty Giraudel"
+  description: "Kitty Giraudel is a non-binary accessibility & diversity advocate, frontend developer, author and real life cat."
+  image: "https://pbs.twimg.com/profile_images/1317111234504916993/LoUeV5RC_400x400.jpg"
 eric-schaefer:
   name: "Eric Schaefer"
   description: "Eric Schaefer is a full-stack JavaScript developer at Edenspiekermann. These days he works mainly with React and Node.js. If you can’t find him, he’s probably drumming or making music."

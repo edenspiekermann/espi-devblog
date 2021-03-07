@@ -13,11 +13,6 @@
   description: A tiny script to make gaccessible content toggles.
   maintained_by: kitty-giraudel
 
-- name: A11y Dialog
-  url: https://github.com/edenspiekermann/a11y-dialog
-  description: A tiny script to make modal dialogs accessible to assistive technology users.
-  maintained_by: kitty-giraudel
-
 - name: spritesh
   url: https://github.com/edenspiekermann/sprite.sh
   description: A Bash script to build a SVG sprite from a folder of SVG files.

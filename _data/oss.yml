@@ -21,9 +21,7 @@
 - name: Faster React Tabs
   url: https://github.com/edenspiekermann/faster-react-tabs
   description: A flexible React components to render accessible tabs.
-  maintained_by: 
-    - kitty-giraudel
-    - eric-schaefer
+  maintained_by: eric-schaefer
 
 - name: transync
   url: https://github.com/edenspiekermann/transync

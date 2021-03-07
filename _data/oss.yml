@@ -1,36 +1,36 @@
 - name: iframify
   url: https://github.com/edenspiekermann/iframify
   description: A small script to replace a node with an iframe version of itself.
-  maintained_by: hugo-giraudel
+  maintained_by: kitty-giraudel
 
 - name: Outline Audit
   url: https://github.com/edenspiekermann/outline-audit
   description: A small script to audit the document outline.
-  maintained_by: hugo-giraudel
+  maintained_by: kitty-giraudel
 
 - name: A11y Toggle
   url: https://github.com/edenspiekermann/a11y-toggle
   description: A tiny script to make gaccessible content toggles.
-  maintained_by: hugo-giraudel
+  maintained_by: kitty-giraudel
 
 - name: A11y Dialog
   url: https://github.com/edenspiekermann/a11y-dialog
   description: A tiny script to make modal dialogs accessible to assistive technology users.
-  maintained_by: hugo-giraudel
+  maintained_by: kitty-giraudel
 
 - name: spritesh
   url: https://github.com/edenspiekermann/sprite.sh
   description: A Bash script to build a SVG sprite from a folder of SVG files.
-  maintained_by: hugo-giraudel
+  maintained_by: kitty-giraudel
 
 - name: Faster React Tabs
   url: https://github.com/edenspiekermann/faster-react-tabs
   description: A flexible React components to render accessible tabs.
   maintained_by: 
-    - hugo-giraudel
+    - kitty-giraudel
     - eric-schaefer
 
 - name: transync
   url: https://github.com/edenspiekermann/transync
   description: A Node.js script to synchronise translation files.
-  maintained_by: hugo-giraudel
+  maintained_by: kitty-giraudel

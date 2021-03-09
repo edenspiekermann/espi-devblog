@@ -1,6 +1,6 @@
 ---
 title: "Introducing iframify"
-author: hugo-giraudel
+author: kitty-giraudel
 layout: post
 ---
 

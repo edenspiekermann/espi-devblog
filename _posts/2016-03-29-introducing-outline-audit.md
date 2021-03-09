@@ -1,6 +1,6 @@
 ---
 title: "Introducing Outline Audit"
-author: hugo-giraudel
+author: kitty-giraudel
 layout: post
 ---
 

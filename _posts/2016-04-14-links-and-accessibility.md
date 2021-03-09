@@ -1,6 +1,6 @@
 ---
 title: "Links and accessibility"
-author: hugo-giraudel
+author: kitty-giraudel
 layout: post
 --- 
 

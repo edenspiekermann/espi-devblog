@@ -1,6 +1,6 @@
 ---
 title: "Code for edge cases"
-author: hugo-giraudel
+author: kitty-giraudel
 layout: post
 ---
 
